@@ -1,0 +1,20 @@
+name: bilanz
+on:
+  schedule:
+    - cron: '15 20 * * 1-5'    # 22:15 MESZ, Heartbeat
+  workflow_dispatch: {}
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: main}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install -r requirements.txt
+      - run: git pull --rebase || true
+      - run: python -m scripts.send_bilanz
