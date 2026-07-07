@@ -27,6 +27,15 @@ def test_zyklus_erzeugt_alert_und_position(tmp_path):
     assert "TTT-2026-07-08" in ctx["alerts_sent"]["2026-07-08"]
     assert events
 
+def test_missed_meldet_und_persistiert_ohne_position(tmp_path):
+    deps, sent = _deps(108.0)                     # dist 8% > 6% -> missed (spekulativ)
+    ctx = _ctx(tmp_path)
+    events = obs.run_cycle(ctx, deps)
+    assert any("ZUG VERPASST" in m for m in sent)
+    assert ctx["positions"] == []
+    assert "TTT-2026-07-08" in ctx["alerts_sent"]["2026-07-08"]
+    assert "missed:TTT-2026-07-08" in events
+
 def test_kein_doppelalert_im_naechsten_zyklus(tmp_path):
     deps, sent = _deps(101.5)
     ctx = _ctx(tmp_path)

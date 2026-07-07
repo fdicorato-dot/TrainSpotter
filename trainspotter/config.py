@@ -33,7 +33,7 @@ TRAIL_BUFFER_PCT = 0.5          # Stop knapp UNTER dem Tief
 MAX_HOLD_DAYS_KONS = 3
 
 # Betrieb
-CYCLE_SECONDS = 120
+CYCLE_SECONDS = {"us": 15, "eu": 120}   # US: Finnhub-Ratenbremse taktet den Zyklus selbst
 US_VOLUME_REFRESH_CYCLES = 5    # Yahoo-Volumen-Cache alle N Zyklen
 LISTEN = ("konservativ", "spekulativ")
 

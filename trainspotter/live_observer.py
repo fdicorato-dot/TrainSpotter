@@ -82,6 +82,8 @@ def run_cycle(ctx: dict, deps: Deps, session_close: bool = False) -> list[str]:
         if alert["status"] == "alert":
             ctx["positions"].append(pt.open_position(alert, now.isoformat()))
             events.append(f"alert:{alert['id']}")
+        else:
+            events.append(f"missed:{alert['id']}")
     still_open = []
     trades_path = ctx.get("trades_path") or f"state/history/trades_{ctx['market']}.csv"
     for pos in ctx["positions"]:
@@ -186,7 +188,7 @@ def run_session(market: str, max_minutes: int):
         if events:
             persist(ctx)
             state.commit_and_push(["state"], f"state: {market} {len(events)} Ereignisse")
-        time.sleep(cfg.CYCLE_SECONDS)
+        time.sleep(cfg.CYCLE_SECONDS[market])
     if datetime.now(timezone.utc) >= close_t:                 # regulaerer Schluss
         run_cycle(ctx, deps, session_close=True)
     persist(ctx)
