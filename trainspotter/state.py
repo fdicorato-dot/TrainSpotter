@@ -36,10 +36,14 @@ def load_trades(csv_path) -> list[dict]:
 def commit_and_push(paths: list[str], message: str) -> bool:
     if os.environ.get("TRAINSPOTTER_NO_GIT") == "1":
         return True
+    status = subprocess.run(["git", "status", "--porcelain", "--", *paths],
+                             capture_output=True, text=True)
+    if not status.stdout.strip():               # nichts zu committen
+        return True
     subprocess.run(["git", "add", *paths], check=False)
     r = subprocess.run(["git", "commit", "-m", message], capture_output=True, text=True)
-    if r.returncode != 0:                      # nichts zu committen
-        return True
+    if r.returncode != 0:                       # echter Commit-Fehler
+        return False
     for _ in range(3):
         subprocess.run(["git", "pull", "--rebase"], check=False)
         if subprocess.run(["git", "push"], capture_output=True).returncode == 0:

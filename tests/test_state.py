@@ -1,4 +1,4 @@
-import json, os
+import json, os, subprocess
 from trainspotter import state
 
 def test_save_load_roundtrip(tmp_path):
@@ -25,3 +25,37 @@ def test_append_und_load_trades(tmp_path):
 def test_commit_noop_ohne_git(tmp_path, monkeypatch):
     monkeypatch.setenv("TRAINSPOTTER_NO_GIT", "1")
     assert state.commit_and_push(["egal.json"], "msg") is True
+
+class _FakeResult:
+    def __init__(self, stdout="", returncode=0):
+        self.stdout = stdout
+        self.returncode = returncode
+
+def test_commit_nichts_zu_tun_ist_erfolg(monkeypatch):
+    monkeypatch.delenv("TRAINSPOTTER_NO_GIT", raising=False)
+    calls = []
+
+    def fake_run(cmd, *args, **kwargs):
+        calls.append(cmd)
+        if cmd[:3] == ["git", "status", "--porcelain"]:
+            return _FakeResult(stdout="", returncode=0)
+        raise AssertionError(f"unerwarteter Aufruf: {cmd}")
+
+    monkeypatch.setattr(subprocess, "run", fake_run)
+    assert state.commit_and_push(["state/x.json"], "msg") is True
+    assert not any("commit" in c for c in calls)
+
+def test_commit_fehler_ist_misserfolg(monkeypatch):
+    monkeypatch.delenv("TRAINSPOTTER_NO_GIT", raising=False)
+
+    def fake_run(cmd, *args, **kwargs):
+        if cmd[:3] == ["git", "status", "--porcelain"]:
+            return _FakeResult(stdout="M state/x.json\n", returncode=0)
+        if cmd[:2] == ["git", "add"]:
+            return _FakeResult(stdout="", returncode=0)
+        if cmd[:2] == ["git", "commit"]:
+            return _FakeResult(stdout="", returncode=1)
+        raise AssertionError(f"unerwarteter Aufruf: {cmd}")
+
+    monkeypatch.setattr(subprocess, "run", fake_run)
+    assert state.commit_and_push(["state/x.json"], "msg") is False
