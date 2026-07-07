@@ -1,0 +1,10 @@
+{"watchlist": [{"ticker": "TTT", "market": "us", "liste": "spekulativ", "score": 90,
+                "breakout_level": 100.0, "adr_pct": 4.0, "avg_volume": 1000000,
+                "criteria": ["volumen_aufbau:2.0x"]}],
+ "today": "2026-07-08",
+ "cycles": [
+   {"time": "2026-07-08T14:00:00+00:00", "index": 0.2, "quotes": {"TTT": {"price": 99.0, "day_volume": 100000}}},
+   {"time": "2026-07-08T15:00:00+00:00", "index": 0.3, "quotes": {"TTT": {"price": 101.5, "day_volume": 900000}}},
+   {"time": "2026-07-08T18:00:00+00:00", "index": 0.4, "quotes": {"TTT": {"price": 108.0, "day_volume": 2000000}}},
+   {"time": "2026-07-08T19:55:00+00:00", "index": 0.4, "quotes": {"TTT": {"price": 107.0, "day_volume": 2500000}}}
+ ]}
