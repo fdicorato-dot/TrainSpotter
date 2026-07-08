@@ -5,18 +5,42 @@ def _api(method: str) -> str | None:
     token = os.environ.get("TELEGRAM_BOT_TOKEN")
     return f"https://api.telegram.org/bot{token}/{method}" if token else None
 
+MAX_MESSAGE_LEN = 4000   # Telegram-Limit 4096, mit Puffer
+
+
+def _split_message(text: str) -> list[str]:
+    """Zerlegt lange Nachrichten an Zeilengrenzen in Telegram-taugliche Teile."""
+    if len(text) <= MAX_MESSAGE_LEN:
+        return [text]
+    parts, current = [], ""
+    for line in text.split("\n"):
+        if current and len(current) + 1 + len(line) > MAX_MESSAGE_LEN:
+            parts.append(current)
+            current = line
+        else:
+            current = f"{current}\n{line}" if current else line
+    if current:
+        parts.append(current)
+    return parts
+
+
 def send_message(text: str) -> bool:
     url, chat = _api("sendMessage"), os.environ.get("TELEGRAM_CHAT_ID")
     if not url or not chat:
         return False
-    for _ in range(3):
-        try:
-            r = requests.post(url, json={"chat_id": chat, "text": text}, timeout=15)
-            if r.ok:
-                return True
-        except requests.RequestException:
-            pass
-    return False
+    for part in _split_message(text):
+        sent = False
+        for _ in range(3):
+            try:
+                r = requests.post(url, json={"chat_id": chat, "text": part}, timeout=15)
+                if r.ok:
+                    sent = True
+                    break
+            except requests.RequestException:
+                pass
+        if not sent:
+            return False
+    return True
 
 def poll_commands(offset: int) -> tuple[list[str], int]:
     url = _api("getUpdates")

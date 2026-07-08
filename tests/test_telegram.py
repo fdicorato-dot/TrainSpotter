@@ -29,3 +29,23 @@ def test_format_update():
 def test_send_message_ohne_token_false(monkeypatch):
     monkeypatch.delenv("TELEGRAM_BOT_TOKEN", raising=False)
     assert tg.send_message("hi") is False
+
+
+def test_lange_nachricht_wird_an_zeilengrenzen_gesplittet(monkeypatch):
+    import requests as rq
+    monkeypatch.setenv("TELEGRAM_BOT_TOKEN", "t")
+    monkeypatch.setenv("TELEGRAM_CHAT_ID", "c")
+    calls = []
+
+    class OK:
+        ok = True
+
+    monkeypatch.setattr(rq, "post", lambda url, json, timeout: calls.append(json["text"]) or OK())
+    text = "\n".join(f"Zeile {i} " + "x" * 60 for i in range(100))   # ~6800 Zeichen
+    assert tg.send_message(text) is True
+    assert len(calls) >= 2                                # gesplittet
+    assert all(len(c) <= tg.MAX_MESSAGE_LEN for c in calls)
+    assert "\n".join(calls) == text                       # nichts verloren
+
+def test_kurze_nachricht_bleibt_ein_stueck():
+    assert tg._split_message("hallo") == ["hallo"]
