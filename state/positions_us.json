@@ -1,0 +1,24 @@
+[
+ {
+  "id": "PENG-2026-07-08",
+  "ticker": "PENG",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 60,
+  "criteria": "tages_topmover|ausbruch_ueber:77.40|volumen:4.3x_zeitanteilig",
+  "entry": 79.04845,
+  "qty": 12.650469427294272,
+  "stop": 72.756,
+  "target1": 86.306,
+  "half_booked": false,
+  "realized": 0.0,
+  "trail_prices": [
+   [
+    "2026-07-08T16:49:51.128836+00:00",
+    78.46
+   ]
+  ],
+  "opened": "2026-07-08T16:49:51.128836+00:00",
+  "open_days": 0
+ }
+]
