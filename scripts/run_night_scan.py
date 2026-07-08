@@ -30,9 +30,18 @@ def _index_close(market: str) -> pd.Series:
     return df["Close"] if df is not None else pd.Series(dtype=float)
 
 def main():
+    # Schutzplanke: Ohne Indexdaten fehlt die relative Stärke für ALLE Kandidaten —
+    # dann lieber die alte Watchlist behalten und laut warnen als still degradieren.
+    idx = {m: _index_close(m) for m in ("us", "eu")}
+    fehlend = [m for m, s in idx.items() if s.empty]
+    if fehlend:
+        telegram_bot.send_message(
+            f"⚠️ Scanner fährt blind — Indexdaten fehlen für {', '.join(sorted(fehlend))}. "
+            "Watchlist wurde NICHT aktualisiert (gestrige bleibt aktiv).")
+        raise SystemExit(1)
     names = universe.load_us_names() | universe.load_de_names()
     wl = build(universe.load_us_universe(), universe.load_de_universe(),
-               fetch_fn=yahoo.daily_history, index_fetch_fn=_index_close, names=names)
+               fetch_fn=yahoo.daily_history, index_fetch_fn=lambda m: idx[m], names=names)
     if not wl:                                  # leere Depesche darf Total-Blindheit nicht verdecken
         telegram_bot.send_message(
             "⚠️ Scanner fährt blind — Nacht-Scan lieferte keine Kandidaten (Datenquelle prüfen).")
