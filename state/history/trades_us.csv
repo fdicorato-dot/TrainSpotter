@@ -1,0 +1,2 @@
+id,ticker,market,liste,score,criteria,opened,closed,entry,exit,qty,pnl_eur,pnl_pct,reason
+PENG-2026-07-08,PENG,us,spekulativ,60,tages_topmover|ausbruch_ueber:77.40|volumen:4.3x_zeitanteilig,2026-07-08T16:49:51.128836+00:00,2026-07-08T20:00:07.672490+00:00,79.0485,78.47,12.6505,-7.32,-0.73,tagesschluss
