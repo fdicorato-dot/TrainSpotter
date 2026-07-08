@@ -1,7 +1,7 @@
 """Tages-Backtest: python scripts/run_backtest.py --market eu [--years 3]"""
 import argparse
 import trainspotter.config as cfg
-from trainspotter import backtest, reports, universe
+from trainspotter import backtest, universe
 from trainspotter.data import yahoo
 
 if __name__ == "__main__":
@@ -14,6 +14,7 @@ if __name__ == "__main__":
     idx = yahoo.daily_history([cfg.INDEX_SYMBOL[a.market]], period=f"{a.years}y")
     index_close = idx[cfg.INDEX_SYMBOL[a.market]]["Close"]
     df = backtest.simulate(daily, index_close, a.market)
+    print(f"Übersprungen (Datumsversatz): {df.attrs.get('skipped', 0)} Titel")
     if df.empty:
         print("Keine Trades gefunden.")
     else:

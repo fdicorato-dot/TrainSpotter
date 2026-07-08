@@ -35,9 +35,15 @@ def _result(entry, day, buy, exit_price, pnl_pct, reason):
 def simulate(daily: dict[str, pd.DataFrame], index_close: pd.Series,
              market: str, start_idx: int = 60) -> pd.DataFrame:
     trades = []
+    aligned, skipped = {}, 0
+    for ticker, df in daily.items():                      # positionelles Slicing braucht
+        if len(df) == len(index_close) and df.index.equals(index_close.index):
+            aligned[ticker] = df                          # deckungsgleiche Indizes, sonst
+        else:                                             # falsche RS-/Folgetag-Mathematik
+            skipped += 1
     n = len(index_close)
     for t in range(start_idx, n - 1):
-        for ticker, df in daily.items():
+        for ticker, df in aligned.items():
             if len(df) <= t + 1:
                 continue
             try:
@@ -48,4 +54,6 @@ def simulate(daily: dict[str, pd.DataFrame], index_close: pd.Series,
                         trades.append(tr)
             except Exception:
                 continue
-    return pd.DataFrame(trades)
+    result = pd.DataFrame(trades)
+    result.attrs["skipped"] = skipped
+    return result

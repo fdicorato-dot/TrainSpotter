@@ -63,6 +63,8 @@ Für den US-Markt `--market us` setzen. Prüfe erst, ob die Regeln im Backtest p
 - **Universum erweitern:** Standardmäßig ist das EU-Universum begrenzt. Für mehr Breite MDAX/SDAX-Titel in [`config/universe_de.csv`](config/universe_de.csv) ergänzen.
 - **US-Backtest gekappt:** Der US-Backtest verarbeitet aus Laufzeitgründen nur die ersten **500 Titel** (`scripts/run_backtest.py`). Beim Ausweiten des US-Universums diese Grenze berücksichtigen.
 - **Score-Gewichte nachkalibrieren:** Nach **4–8 Wochen Paper-Trading** die Signalqualität anhand der protokollierten Trades in `state/history/trades_*.csv` auswerten und die Score-Gewichte entsprechend nachjustieren.
+- **NYSE-Universum zu streng gefiltert (bekannte Lücke):** `otherlisted.txt` (NYSE) wird im Parser [`trainspotter/universe.py`](trainspotter/universe.py) derzeit zu streng gefiltert; das US-Universum ist faktisch NASDAQ-lastig. Parser-Fix als Backlog-Punkt offen.
+- **Watchlist-Nachladen bei Nacht-Scan-Verspätung:** Läuft der Nacht-Scan über **06:55 UTC** hinaus, lädt der EU-Beobachter die frische Watchlist zu Sitzungsbeginn per `git pull --rebase` selbst nach, damit er nicht auf einer veralteten Depesche startet.
 
 ---
 

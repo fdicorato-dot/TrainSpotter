@@ -1,5 +1,5 @@
 import pandas as pd
-from trainspotter import night_scan, state, universe
+from trainspotter import night_scan, state, telegram_bot, universe
 from trainspotter.data import yahoo
 import trainspotter.config as cfg
 
@@ -25,6 +25,9 @@ def _index_close(market: str) -> pd.Series:
 def main():
     wl = build(universe.load_us_universe(), universe.load_de_universe(),
                fetch_fn=yahoo.daily_history, index_fetch_fn=_index_close)
+    if not wl:                                  # leere Depesche darf Total-Blindheit nicht verdecken
+        telegram_bot.send_message(
+            "⚠️ Scanner fährt blind — Nacht-Scan lieferte keine Kandidaten (Datenquelle prüfen).")
     state.save_json("state/watchlist.json", wl)
     state.commit_and_push(["state/watchlist.json"], f"state: Watchlist {len(wl)} Titel")
 

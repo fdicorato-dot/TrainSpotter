@@ -1,4 +1,4 @@
-import os, time
+import os, subprocess, time
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from typing import Callable
@@ -14,17 +14,39 @@ class Deps:
     review_fn: Callable
     now_fn: Callable
 
-STATE = {"watchlist": "state/watchlist.json", "alerts": "state/alerts_sent.json",
-         "offset": "state/telegram_offset.json"}
+STATE = {"watchlist": "state/watchlist.json", "offset": "state/telegram_offset.json"}
+
+def _alerts_path(market: str) -> str:
+    return f"state/alerts_sent_{market}.json"           # je Markt eigene Datei -> disjunkt
+
+def recover_overnight(positions: list[dict], today: str, trades_path: str, send_fn,
+                      now_iso: str | None = None) -> list[dict]:
+    """Spekulative Positionen sind reine Intraday-Wetten (Spec §4). Lag eine über Nacht
+    (Runner vor Schlussgong gestorben), wird sie beim Neustart sofort notgeschlossen."""
+    now_iso = now_iso or datetime.now(timezone.utc).isoformat()
+    kept = []
+    for pos in positions:
+        if pos.get("liste") == "spekulativ" and pos.get("opened", "")[:10] < today:
+            trails = pos.get("trail_prices") or []
+            price = trails[-1][1] if trails else pos["entry"]
+            trade = pt._close(pos, price, "notschluss_uebernacht", now_iso)
+            state.append_trade(trades_path, trade)
+            send_fn(f"⚠️ {pos['ticker']}: spekulative Position lag über Nacht — notgeschlossen.")
+        else:
+            kept.append(pos)
+    return kept
 
 def load_context(market: str) -> dict:
     today = datetime.now(timezone.utc).astimezone(cal.TZ[market]).date().isoformat()
     wl = [e for e in state.load_json(STATE["watchlist"], []) if e["market"] == market]
-    alerts = state.load_json(STATE["alerts"], {})
+    alerts = state.load_json(_alerts_path(market), {})
     alerts = dict(sorted(alerts.items())[-2:])            # nur gestern+heute behalten
     alerts.setdefault(today, [])
+    positions = state.load_json(f"state/positions_{market}.json", [])
+    positions = recover_overnight(positions, today,
+                                  f"state/history/trades_{market}.csv", tg.send_message)
     return {"market": market, "watchlist": wl, "today": today, "alerts_sent": alerts,
-            "positions": state.load_json(f"state/positions_{market}.json", [])}
+            "positions": positions}
 
 def movers_entries(tickers: list[str], fetch_fn, market: str, known: set[str]) -> list[dict]:
     """Tages-Topmover, die nicht auf der Watchlist stehen: Ad-hoc-Bahnsteig-Eintrag
@@ -53,7 +75,7 @@ def movers_entries(tickers: list[str], fetch_fn, market: str, known: set[str]) -
 
 def persist(ctx: dict):
     state.save_json(f"state/positions_{ctx['market']}.json", ctx["positions"])
-    state.save_json(STATE["alerts"], ctx["alerts_sent"])
+    state.save_json(_alerts_path(ctx["market"]), ctx["alerts_sent"])
 
 def run_cycle(ctx: dict, deps: Deps, session_close: bool = False) -> list[str]:
     now = deps.now_fn()
@@ -62,28 +84,30 @@ def run_cycle(ctx: dict, deps: Deps, session_close: bool = False) -> list[str]:
     index_chg = deps.index_fn()
     elapsed = cal.elapsed_fraction(now, ctx["market"])
     events: list[str] = []
-    sent_today = set(ctx["alerts_sent"][ctx["today"]])
-    open_ids = {p["id"] for p in ctx["positions"]}
-    cands = []
-    for e in ctx["watchlist"]:
-        q = quotes.get(e["ticker"])
-        if not q:
-            continue
-        try:
-            r = triggers.check_trigger(e, q["price"], q["day_volume"], index_chg, elapsed, ctx["today"])
-            if r and r["id"] not in open_ids:
-                cands.append(r)
-        except Exception:
-            continue                                     # kranker Ticker stoppt nie den Scan
-    for alert in triggers.apply_alert_discipline(cands, sent_today, _sent_counts(ctx)):
-        ki = deps.review_fn(alert)
-        deps.send_fn(tg.format_alert(alert, ki))
-        ctx["alerts_sent"][ctx["today"]].append(alert["id"])
-        if alert["status"] == "alert":
-            ctx["positions"].append(pt.open_position(alert, now.isoformat()))
-            events.append(f"alert:{alert['id']}")
-        else:
-            events.append(f"missed:{alert['id']}")
+    records = ctx["alerts_sent"][ctx["today"]]           # [{"id","liste","status"}, ...]
+    if not session_close:                                # Schlussgong eroeffnet nichts mehr
+        sent_today = {r["id"] for r in records}
+        open_ids = {p["id"] for p in ctx["positions"]}
+        cands = []
+        for e in ctx["watchlist"]:
+            q = quotes.get(e["ticker"])
+            if not q:
+                continue
+            try:
+                r = triggers.check_trigger(e, q["price"], q["day_volume"], index_chg, elapsed, ctx["today"])
+                if r and r["id"] not in open_ids:
+                    cands.append(r)
+            except Exception:
+                continue                                 # kranker Ticker stoppt nie den Scan
+        for alert in triggers.apply_alert_discipline(cands, sent_today, _sent_counts(ctx)):
+            ki = deps.review_fn(alert)
+            deps.send_fn(tg.format_alert(alert, ki))
+            records.append({"id": alert["id"], "liste": alert["liste"], "status": alert["status"]})
+            if alert["status"] == "alert":
+                ctx["positions"].append(pt.open_position(alert, now.isoformat()))
+                events.append(f"alert:{alert['id']}")
+            else:
+                events.append(f"missed:{alert['id']}")
     still_open = []
     trades_path = ctx.get("trades_path") or f"state/history/trades_{ctx['market']}.csv"
     for pos in ctx["positions"]:
@@ -93,8 +117,14 @@ def run_cycle(ctx: dict, deps: Deps, session_close: bool = False) -> list[str]:
             continue
         evs, trade = pt.update_position(pos, q["price"], now.isoformat(), session_close)
         for ev in evs:
-            if ev in ("target1", "trail"):
+            if ev == "target1":
                 deps.send_fn(tg.format_update(ev, pos, q["price"]))
+                pos["last_notified_stop"] = pos["stop"]
+            elif ev == "trail":                          # Spec §6.5: nicht bei jedem Cent klingeln
+                last = pos.get("last_notified_stop", pos["stop"])
+                if pos["stop"] >= last * 1.005:          # nur ab +0.5% ueber letzter Meldung
+                    deps.send_fn(tg.format_update(ev, pos, q["price"]))
+                    pos["last_notified_stop"] = pos["stop"]
         if trade:
             state.append_trade(trades_path, trade)
             deps.send_fn(tg.format_trade_closed(trade))
@@ -106,12 +136,13 @@ def run_cycle(ctx: dict, deps: Deps, session_close: bool = False) -> list[str]:
     return events
 
 def _sent_counts(ctx: dict) -> dict:
-    """Wie viele Alerts je Liste heute schon raus sind (Ticker -> Liste aus der Watchlist)."""
-    liste_by_ticker = {e["ticker"]: e["liste"] for e in ctx["watchlist"]}
+    """Wie viele echte Alerts (status 'alert') je Liste heute schon raus sind. Eigener
+    Markt, eigene Datei -> reines Zaehlen, kein Ticker-Parsing. Missed-Meldungen und
+    Fremdmarkt-Alerts verbrauchen kein Budget mehr."""
     counts = {l: 0 for l in cfg.LISTEN}
-    for alert_id in ctx["alerts_sent"][ctx["today"]]:
-        ticker = alert_id.rsplit("-", 3)[0]               # "NVDA-2026-07-08" -> "NVDA"
-        counts[liste_by_ticker.get(ticker, "spekulativ")] += 1
+    for r in ctx["alerts_sent"][ctx["today"]]:
+        if r["status"] == "alert":
+            counts[r["liste"]] = counts.get(r["liste"], 0) + 1
     return counts
 
 def _handle_commands(ctx: dict):
@@ -119,8 +150,8 @@ def _handle_commands(ctx: dict):
     cmds, new_off = tg.poll_commands(off["offset"])
     for c in cmds:
         if c == "/status":
-            tg.send_message(reports.format_status_command(ctx["positions"],
-                                                          ctx["alerts_sent"][ctx["today"]]))
+            today_ids = [r["id"] for r in ctx["alerts_sent"][ctx["today"]]]
+            tg.send_message(reports.format_status_command(ctx["positions"], today_ids))
         elif c == "/stats":
             trades = state.load_trades("state/history/trades_us.csv") + \
                      state.load_trades("state/history/trades_eu.csv")
@@ -165,8 +196,10 @@ def run_session(market: str, max_minutes: int):
         return
     open_t, close_t = cal.session_bounds(local_date, market)
     hard_end = now + timedelta(minutes=max_minutes)
+    if os.environ.get("TRAINSPOTTER_NO_GIT") != "1":     # späten Nacht-Scan-Commit nachladen
+        subprocess.run(["git", "pull", "--rebase"], check=False)
     ctx, deps = load_context(market), build_deps(market)
-    data_fail, cycle_no = 0, 0
+    data_fail, cycle_no, sync_warned = 0, 0, False
     while datetime.now(timezone.utc) < min(close_t, hard_end):
         if datetime.now(timezone.utc) < open_t:
             time.sleep(30)
@@ -187,9 +220,16 @@ def run_session(market: str, max_minutes: int):
             _handle_commands(ctx)
         if events:
             persist(ctx)
-            state.commit_and_push(["state"], f"state: {market} {len(events)} Ereignisse")
+            if not state.commit_and_push(["state"], f"state: {market} {len(events)} Ereignisse"):
+                sync_warned = _warn_sync(sync_warned)
         time.sleep(cfg.CYCLE_SECONDS[market])
     if datetime.now(timezone.utc) >= close_t:                 # regulaerer Schluss
         run_cycle(ctx, deps, session_close=True)
     persist(ctx)
-    state.commit_and_push(["state"], f"state: {market} Sitzungsende")
+    if not state.commit_and_push(["state"], f"state: {market} Sitzungsende"):
+        sync_warned = _warn_sync(sync_warned)
+
+def _warn_sync(already_warned: bool) -> bool:
+    if not already_warned:
+        tg.send_message("⚠️ State-Sync fehlgeschlagen — Ergebnisse könnten verloren gehen.")
+    return True

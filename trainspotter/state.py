@@ -1,4 +1,4 @@
-import csv, json, os, subprocess
+import csv, json, os, subprocess, time
 
 TRADE_FIELDS = ["id", "ticker", "market", "liste", "score", "criteria", "opened",
                 "closed", "entry", "exit", "qty", "pnl_eur", "pnl_pct", "reason"]
@@ -38,14 +38,20 @@ def commit_and_push(paths: list[str], message: str) -> bool:
         return True
     status = subprocess.run(["git", "status", "--porcelain", "--", *paths],
                              capture_output=True, text=True)
+    if status.returncode != 0:                  # Git selbst kaputt -> nicht so tun als ob ok
+        return False
     if not status.stdout.strip():               # nichts zu committen
         return True
     subprocess.run(["git", "add", *paths], check=False)
     r = subprocess.run(["git", "commit", "-m", message], capture_output=True, text=True)
     if r.returncode != 0:                       # echter Commit-Fehler
         return False
-    for _ in range(3):
-        subprocess.run(["git", "pull", "--rebase"], check=False)
+    for attempt in range(1, 4):
+        if subprocess.run(["git", "pull", "--rebase"], check=False).returncode != 0:
+            subprocess.run(["git", "rebase", "--abort"], check=False)  # sonst haengt Rebase
+            time.sleep(2 * attempt)
+            continue
         if subprocess.run(["git", "push"], capture_output=True).returncode == 0:
             return True
+        time.sleep(2 * attempt)                 # Backoff zwischen Versuchen
     return False

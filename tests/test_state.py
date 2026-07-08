@@ -59,3 +59,26 @@ def test_commit_fehler_ist_misserfolg(monkeypatch):
 
     monkeypatch.setattr(subprocess, "run", fake_run)
     assert state.commit_and_push(["state/x.json"], "msg") is False
+
+def test_commit_pull_konflikt_bricht_rebase_ab(monkeypatch):
+    monkeypatch.delenv("TRAINSPOTTER_NO_GIT", raising=False)
+    monkeypatch.setattr(state.time, "sleep", lambda *a, **k: None)
+    calls = []
+
+    def fake_run(cmd, *args, **kwargs):
+        calls.append(cmd)
+        if cmd[:3] == ["git", "status", "--porcelain"]:
+            return _FakeResult(stdout="M state/x.json\n", returncode=0)
+        if cmd[:2] == ["git", "add"]:
+            return _FakeResult(returncode=0)
+        if cmd[:2] == ["git", "commit"]:
+            return _FakeResult(returncode=0)
+        if cmd[:2] == ["git", "pull"]:
+            return _FakeResult(returncode=1)          # Rebase-Konflikt
+        if cmd[:3] == ["git", "rebase", "--abort"]:
+            return _FakeResult(returncode=0)
+        raise AssertionError(f"unerwarteter Aufruf: {cmd}")
+
+    monkeypatch.setattr(subprocess, "run", fake_run)
+    assert state.commit_and_push(["state/x.json"], "msg") is False
+    assert calls.count(["git", "rebase", "--abort"]) == 3
