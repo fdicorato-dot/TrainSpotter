@@ -7,7 +7,7 @@ def test_listen_parameter_vollstaendig():
 def test_kernwerte():
     assert cfg.STOP_PCT["konservativ"] == 3.0
     assert cfg.TARGET1_PCT["spekulativ"] == 10.0
-    assert cfg.SLIPPAGE_PCT == 0.2
+    assert cfg.SLIPPAGE_PCT == {"konservativ": 0.2, "spekulativ": 0.75}
 
 def test_cycle_seconds_je_markt():
     assert set(cfg.CYCLE_SECONDS) == {"us", "eu"}

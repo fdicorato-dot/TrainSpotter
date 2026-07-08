@@ -1,7 +1,19 @@
 """Einzige Stelle im Projekt, die yfinance importiert (austauschbare Quelle)."""
+from datetime import datetime
 import pandas as pd
 import yfinance as yf
 import trainspotter.config as cfg
+
+def _bars_von_heute(sub: pd.DataFrame) -> bool:
+    """True, wenn der letzte Balken-Zeitstempel des Frames von heute ist. Yahoo liefert
+    bei Feiertagen/Wochenenden gerne den letzten Handelstag als '1d'-Snapshot zurueck —
+    solche abgestandenen Balken wuerden sonst als heutiges Volumen fehlgedeutet."""
+    if sub is None or sub.empty:
+        return False
+    ts = sub.index[-1]
+    tz = getattr(ts, "tzinfo", None)
+    heute = datetime.now(tz).date() if tz is not None else datetime.now().date()
+    return ts.date() == heute
 
 def split_batch(df: pd.DataFrame, tickers: list[str]) -> dict[str, pd.DataFrame]:
     out = {}
@@ -36,6 +48,8 @@ def intraday_snapshot(tickers: list[str]) -> dict[str, dict]:
         return {}
     out = {}
     for t, sub in split_batch(df, tickers).items():
+        if not _bars_von_heute(sub):
+            continue                                     # abgestandener Balken -> ueberspringen
         out[t] = {"price": float(sub["Close"].iloc[-1]),
                   "day_volume": float(sub["Volume"].sum())}
     return out

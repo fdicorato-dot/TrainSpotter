@@ -42,4 +42,23 @@ def platform_score(ticker: str, df: pd.DataFrame, index_close: pd.Series, market
             "avg_volume": float(df["Volume"].iloc[-20:].mean()), "criteria": criteria}
 
 def build_watchlist(entries: list[dict]) -> list[dict]:
-    return sorted(entries, key=lambda e: e["score"], reverse=True)[:cfg.WATCHLIST_SIZE]
+    """Quotierte Auswahl je (Markt, Liste): jeder Eimer bekommt hoechstens seine Quote,
+    freie Restplaetze werden marktuebergreifend nachbesetzt. Sortierschluessel ueberall
+    (Score absteigend, Ø-Volumen absteigend) — das Volumen als stetiger Tiebreaker
+    ersetzt die fruehere alphabetische Zufallsreihenfolge."""
+    def key(e):
+        return (e["score"], e.get("avg_volume", 0.0))
+    ranked = sorted(entries, key=key, reverse=True)
+    selected, leftover = [], []
+    remaining = dict(cfg.WATCHLIST_QUOTA)
+    for e in ranked:
+        bucket = (e.get("market"), e.get("liste"))
+        if remaining.get(bucket, 0) > 0:
+            remaining[bucket] -= 1
+            selected.append(e)
+        else:
+            leftover.append(e)
+    free = cfg.WATCHLIST_SIZE - len(selected)
+    if free > 0:
+        selected += leftover[:free]                       # Restplaetze nachbesetzen
+    return selected

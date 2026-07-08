@@ -28,9 +28,11 @@ def check_trigger(entry: dict, price: float, day_volume: float, index_change_pct
             "warning": warning}
 
 def apply_alert_discipline(candidates: list[dict], alerts_sent: set[str],
-                           sent_counts: dict[str, int]) -> list[dict]:
+                           sent_counts: dict[str, int], missed_sent: int = 0) -> list[dict]:
     fresh = [c for c in candidates if c["id"] not in alerts_sent]
-    out = [c for c in fresh if c["status"] == "missed"]
+    missed_budget = max(cfg.MAX_MISSED_PER_DAY - missed_sent, 0)
+    out = sorted((c for c in fresh if c["status"] == "missed"),
+                 key=lambda c: c["score"], reverse=True)[:missed_budget]
     budget = {l: cfg.MAX_ALERTS_PER_LIST - sent_counts.get(l, 0) for l in cfg.LISTEN}
     for c in sorted((c for c in fresh if c["status"] == "alert"),
                     key=lambda c: c["score"], reverse=True):

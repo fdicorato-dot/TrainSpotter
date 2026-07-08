@@ -2,7 +2,7 @@ from datetime import datetime, timedelta
 import trainspotter.config as cfg
 
 def open_position(alert: dict, now_iso: str) -> dict:
-    entry = alert["entry"] * (1 + cfg.SLIPPAGE_PCT / 100)
+    entry = alert["entry"] * (1 + cfg.SLIPPAGE_PCT[alert["liste"]] / 100)
     return {"id": alert["id"], "ticker": alert["ticker"], "market": alert["market"],
             "liste": alert["liste"], "score": alert["score"],
             "criteria": "|".join(alert["reasons"]), "entry": entry,

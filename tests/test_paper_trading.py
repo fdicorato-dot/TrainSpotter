@@ -8,22 +8,23 @@ ALERT = {"id": "NVDA-2026-07-08", "ticker": "NVDA", "market": "us", "liste": "sp
 
 def test_open_mit_slippage():
     pos = pt.open_position(ALERT, "2026-07-08T16:00:00+00:00")
-    assert pos["entry"] == pytest.approx(100.2)
-    assert pos["qty"] == pytest.approx(1000.0 / 100.2)
+    # spekulativ: 0.75% Slippage -> 100 * 1.0075 = 100.75
+    assert pos["entry"] == pytest.approx(100.75)
+    assert pos["qty"] == pytest.approx(1000.0 / 100.75)
 
 def test_stop_schliesst_alles():
     pos = pt.open_position(ALERT, "2026-07-08T16:00:00+00:00")
     events, trade = pt.update_position(pos, 93.5, "2026-07-08T16:30:00+00:00")
     assert events == ["stop"] and trade["reason"] == "stop"
     # trade["pnl_eur"] ist auf 2 Stellen gerundet -> abs-Toleranz noetig
-    assert float(trade["pnl_eur"]) == pytest.approx((1000.0 / 100.2) * (93.5 - 100.2), abs=0.01)
+    assert float(trade["pnl_eur"]) == pytest.approx((1000.0 / 100.75) * (93.5 - 100.75), abs=0.01)
 
 def test_ziel1_bucht_haelfte_und_trailt():
     pos = pt.open_position(ALERT, "2026-07-08T16:00:00+00:00")
     events, trade = pt.update_position(pos, 110.5, "2026-07-08T17:00:00+00:00")
     assert "target1" in events and trade is None
-    assert pos["half_booked"] and pos["qty"] == pytest.approx(1000.0 / 100.2 / 2)
-    assert pos["realized"] == pytest.approx((1000.0 / 100.2 / 2) * (110.0 - 100.2))
+    assert pos["half_booked"] and pos["qty"] == pytest.approx(1000.0 / 100.75 / 2)
+    assert pos["realized"] == pytest.approx((1000.0 / 100.75 / 2) * (110.0 - 100.75))
     assert pos["stop"] == pytest.approx(110.5 * 0.995)   # Trailing unterm 30-Min-Tief
     # naechster Tick faellt unter den Trail -> Rest zu, Gesamt-PnL = realisiert + Rest
     events2, trade2 = pt.update_position(pos, 109.0, "2026-07-08T17:02:00+00:00")

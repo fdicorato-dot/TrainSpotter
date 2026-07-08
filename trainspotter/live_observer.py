@@ -99,7 +99,8 @@ def run_cycle(ctx: dict, deps: Deps, session_close: bool = False) -> list[str]:
                     cands.append(r)
             except Exception:
                 continue                                 # kranker Ticker stoppt nie den Scan
-        for alert in triggers.apply_alert_discipline(cands, sent_today, _sent_counts(ctx)):
+        missed_sent = sum(1 for r in records if r["status"] == "missed")
+        for alert in triggers.apply_alert_discipline(cands, sent_today, _sent_counts(ctx), missed_sent):
             ki = deps.review_fn(alert)
             deps.send_fn(tg.format_alert(alert, ki))
             records.append({"id": alert["id"], "liste": alert["liste"], "status": alert["status"]})

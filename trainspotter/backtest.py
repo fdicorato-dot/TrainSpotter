@@ -7,7 +7,7 @@ def simulate_trade(entry: dict, df: pd.DataFrame, day_idx: int) -> dict | None:
     d0 = df.iloc[day_idx]
     if d0["High"] <= level or d0["Open"] >= level * 1.04:
         return None
-    buy = max(level, float(d0["Open"])) * (1 + cfg.SLIPPAGE_PCT / 100)
+    buy = max(level, float(d0["Open"])) * (1 + cfg.SLIPPAGE_PCT[liste] / 100)
     stop = level * (1 - cfg.STOP_PCT[liste] / 100)
     target1 = buy * (1 + cfg.TARGET1_PCT[liste] / 100)
     horizon = 1 if liste == "spekulativ" else cfg.MAX_HOLD_DAYS_KONS
