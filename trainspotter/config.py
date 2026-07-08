@@ -47,3 +47,4 @@ LISTEN = ("konservativ", "spekulativ")
 INDEX_SYMBOL = {"us": "^GSPC", "eu": "^GDAXI"}
 
 DISCLAIMER = "Hinweis: Analyse, keine Anlageberatung."
+REPORT_URL_BASE = "https://fdicorato-dot.github.io/TrainSpotter/reports"

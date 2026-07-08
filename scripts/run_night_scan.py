@@ -1,9 +1,12 @@
+from datetime import date
+
 import pandas as pd
-from trainspotter import night_scan, state, telegram_bot, universe
+from trainspotter import html_report, night_scan, state, telegram_bot, universe
 from trainspotter.data import yahoo
 import trainspotter.config as cfg
 
-def build(us_universe, de_universe, fetch_fn, index_fetch_fn) -> list[dict]:
+def build(us_universe, de_universe, fetch_fn, index_fetch_fn,
+          names: dict | None = None) -> list[dict]:
     entries = []
     for market, tickers in (("us", us_universe), ("eu", de_universe)):
         index_close = index_fetch_fn(market)
@@ -15,7 +18,11 @@ def build(us_universe, de_universe, fetch_fn, index_fetch_fn) -> list[dict]:
                     entries.append(e)
             except Exception:
                 continue
-    return night_scan.build_watchlist(entries)
+    wl = night_scan.build_watchlist(entries)
+    names = names or {}
+    for e in wl:
+        e["name"] = names.get(e["ticker"], e["ticker"])
+    return wl
 
 def _index_close(market: str) -> pd.Series:
     h = yahoo.daily_history([cfg.INDEX_SYMBOL[market]], period="2y")
@@ -23,13 +30,16 @@ def _index_close(market: str) -> pd.Series:
     return df["Close"] if df is not None else pd.Series(dtype=float)
 
 def main():
+    names = universe.load_us_names() | universe.load_de_names()
     wl = build(universe.load_us_universe(), universe.load_de_universe(),
-               fetch_fn=yahoo.daily_history, index_fetch_fn=_index_close)
+               fetch_fn=yahoo.daily_history, index_fetch_fn=_index_close, names=names)
     if not wl:                                  # leere Depesche darf Total-Blindheit nicht verdecken
         telegram_bot.send_message(
             "⚠️ Scanner fährt blind — Nacht-Scan lieferte keine Kandidaten (Datenquelle prüfen).")
     state.save_json("state/watchlist.json", wl)
-    state.commit_and_push(["state/watchlist.json"], f"state: Watchlist {len(wl)} Titel")
+    html_report.write_report(wl, date.today().isoformat())
+    state.commit_and_push(["state/watchlist.json", "docs/reports"],
+                          f"state: Watchlist {len(wl)} Titel")
 
 if __name__ == "__main__":
     main()

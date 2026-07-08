@@ -59,13 +59,20 @@ def poll_commands(offset: int) -> tuple[list[str], int]:
             cmds.append(text.split()[0])
     return cmds, offset
 
+def _alert_label(alert: dict) -> str:
+    """Ticker mit Klarname in Klammern; ohne Namen (oder Name == Ticker) nur Ticker."""
+    name = alert.get("name")
+    if name and name != alert["ticker"]:
+        return f"{alert['ticker']} ({name})"
+    return alert["ticker"]
+
 def format_alert(alert: dict, ki: dict | None) -> str:
     warn = f"\n⚠️ {alert['warning']}" if alert.get("warning") else ""
     if alert["status"] == "missed":
-        return (f"🚂💨 ZUG VERPASST — {alert['ticker']} [{alert['liste']}]\n"
+        return (f"🚂💨 ZUG VERPASST — {_alert_label(alert)} [{alert['liste']}]\n"
                 f"Schon {alert['dist_pct']:+.1f}% über Ausbruch {alert['breakout_level']:.2f}. "
                 f"Nicht hinterherspringen.{warn}")
-    lines = [f"🚂 ZUG ERKANNT — {alert['ticker']} [{alert['liste']}]",
+    lines = [f"🚂 ZUG ERKANNT — {_alert_label(alert)} [{alert['liste']}]",
              f"Regeln: {', '.join(alert['reasons'])}",
              f"Ausbruch über {alert['breakout_level']:.2f} | Kurs {alert['price']:.2f} ({alert['dist_pct']:+.1f}%)",
              f"Einstieg: {alert['entry']:.2f} | Stop: {alert['stop']:.2f} | Ziel 1: {alert['target1']:.2f}",

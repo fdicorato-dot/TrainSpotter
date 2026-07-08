@@ -63,7 +63,7 @@ def movers_entries(tickers: list[str], fetch_fn, market: str, known: set[str]) -
             adr = ind.adr_pct(df["High"], df["Low"], df["Close"])
             if adr < cfg.ADR_MIN_KONS:
                 continue
-            out.append({"ticker": t, "market": market,
+            out.append({"ticker": t, "name": t, "market": market,
                         "liste": "spekulativ" if adr >= cfg.ADR_MIN_SPEC else "konservativ",
                         "score": cfg.SCORE_MIN, "breakout_level": ind.breakout_level(df["High"]),
                         "adr_pct": round(adr, 2),

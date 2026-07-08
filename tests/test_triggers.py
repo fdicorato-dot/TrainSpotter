@@ -17,6 +17,11 @@ def test_alert_mit_stop_und_ziel():
     assert r["target1"] == pytest.approx(111.65)         # 101.5 * 1.10
     assert r["warning"] is None
 
+def test_alert_traegt_klarnamen_mit_ticker_fallback():
+    r = _check(101.5, entry=ENTRY | {"name": "NVIDIA Corporation"})
+    assert r["name"] == "NVIDIA Corporation"
+    assert _check(101.5)["name"] == "NVDA"               # kein Name -> Ticker
+
 def test_kein_ausbruch_kein_alert():
     assert _check(99.5) is None
 

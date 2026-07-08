@@ -17,6 +17,7 @@ def check_trigger(entry: dict, price: float, day_volume: float, index_change_pct
     dist = ind.distance_pct(price, level)
     status = "missed" if dist > cfg.MISSED_TRAIN_PCT[liste] else "alert"
     return {"id": f"{entry['ticker']}-{today}", "ticker": entry["ticker"],
+            "name": entry.get("name", entry["ticker"]),
             "market": entry["market"], "liste": liste, "score": entry["score"],
             "status": status, "price": price, "entry": price,
             "stop": round(level * (1 - cfg.STOP_PCT[liste] / 100), 4),

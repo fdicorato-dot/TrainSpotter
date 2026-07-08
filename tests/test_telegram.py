@@ -1,6 +1,7 @@
 from trainspotter import telegram_bot as tg
 
-ALERT = {"id": "NVDA-2026-07-08", "ticker": "NVDA", "liste": "spekulativ", "status": "alert",
+ALERT = {"id": "NVDA-2026-07-08", "ticker": "NVDA", "name": "NVIDIA Corporation",
+         "liste": "spekulativ", "status": "alert",
          "price": 101.5, "entry": 101.5, "stop": 94.0, "target1": 111.65,
          "breakout_level": 100.0, "vol_ratio": 2.5, "dist_pct": 1.5,
          "reasons": ["volumen_aufbau:2.0x", "ausbruch_ueber:100.00", "volumen:2.5x_zeitanteilig"],
@@ -8,17 +9,23 @@ ALERT = {"id": "NVDA-2026-07-08", "ticker": "NVDA", "liste": "spekulativ", "stat
 
 def test_format_alert_golden():
     text = tg.format_alert(ALERT, {"einschaetzung": "Ausbruch wird von News getragen."})
-    assert text == ("🚂 ZUG ERKANNT — NVDA [spekulativ]\n"
+    assert text == ("🚂 ZUG ERKANNT — NVDA (NVIDIA Corporation) [spekulativ]\n"
                     "Regeln: volumen_aufbau:2.0x, ausbruch_ueber:100.00, volumen:2.5x_zeitanteilig\n"
                     "Ausbruch über 100.00 | Kurs 101.50 (+1.5%)\n"
                     "Einstieg: 101.50 | Stop: 94.00 | Ziel 1: 111.65\n"
                     "Danach: Trailing-Stop.\n"
                     "KI: Ausbruch wird von News getragen.")
 
+def test_format_alert_ohne_namen_keine_klammer():
+    ohne = {k: v for k, v in ALERT.items() if k != "name"}
+    assert tg.format_alert(ohne, None).startswith("🚂 ZUG ERKANNT — NVDA [spekulativ]")
+    gleich = ALERT | {"name": "NVDA"}                     # Name == Ticker -> kein "NVDA (NVDA)"
+    assert tg.format_alert(gleich, None).startswith("🚂 ZUG ERKANNT — NVDA [spekulativ]")
+
 def test_format_alert_verpasst_und_warnung():
     a = ALERT | {"status": "missed", "dist_pct": 7.0, "warning": "Markt-Gegenwind: Index -2.0% heute"}
     text = tg.format_alert(a, None)
-    assert text.startswith("🚂💨 ZUG VERPASST — NVDA")
+    assert text.startswith("🚂💨 ZUG VERPASST — NVDA (NVIDIA Corporation) [spekulativ]")
     assert "Nicht hinterherspringen" in text and "⚠️ Markt-Gegenwind" in text
 
 def test_format_update():
