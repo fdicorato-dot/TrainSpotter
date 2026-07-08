@@ -4,6 +4,11 @@
    "id": "PENG-2026-07-08",
    "liste": "spekulativ",
    "status": "alert"
+  },
+  {
+   "id": "XENE-2026-07-08",
+   "liste": "spekulativ",
+   "status": "missed"
   }
  ]
 }
