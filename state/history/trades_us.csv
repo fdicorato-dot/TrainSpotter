@@ -1,2 +1,4 @@
 id,ticker,market,liste,score,criteria,opened,closed,entry,exit,qty,pnl_eur,pnl_pct,reason
 PENG-2026-07-08,PENG,us,spekulativ,60,tages_topmover|ausbruch_ueber:77.40|volumen:4.3x_zeitanteilig,2026-07-08T16:49:51.128836+00:00,2026-07-08T20:00:07.672490+00:00,79.0485,78.47,12.6505,-7.32,-0.73,tagesschluss
+PHVS-2026-07-09,PHVS,us,spekulativ,90,volumen_aufbau:1.7x|nahe_ausbruch:0.1%|trend_intakt|rel_staerke:+25pp|ausbruch_ueber:35.91|volumen:5.0x_zeitanteilig,2026-07-09T16:10:43.313544+00:00,2026-07-09T20:02:06.344677+00:00,36.3708,35.96,27.4946,-11.29,-1.13,tagesschluss
+LASR-2026-07-09,LASR,us,spekulativ,60,tages_topmover|ausbruch_ueber:72.49|volumen:4.3x_zeitanteilig,2026-07-09T16:10:43.313544+00:00,2026-07-09T20:02:06.344677+00:00,75.502,74.71,13.2447,-10.49,-1.05,tagesschluss
