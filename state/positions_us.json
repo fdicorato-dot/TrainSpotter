@@ -1,1 +1,46 @@
-[]
+[
+ {
+  "id": "PHVS-2026-07-09",
+  "ticker": "PHVS",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 90,
+  "criteria": "volumen_aufbau:1.7x|nahe_ausbruch:0.1%|trend_intakt|rel_staerke:+25pp|ausbruch_ueber:35.91|volumen:5.0x_zeitanteilig",
+  "entry": 36.37075,
+  "qty": 27.49462136469553,
+  "stop": 33.7507,
+  "target1": 39.71,
+  "half_booked": false,
+  "realized": 0.0,
+  "trail_prices": [
+   [
+    "2026-07-09T16:10:43.313544+00:00",
+    36.1
+   ]
+  ],
+  "opened": "2026-07-09T16:10:43.313544+00:00",
+  "open_days": 0
+ },
+ {
+  "id": "LASR-2026-07-09",
+  "ticker": "LASR",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 60,
+  "criteria": "tages_topmover|ausbruch_ueber:72.49|volumen:4.3x_zeitanteilig",
+  "entry": 75.50205,
+  "qty": 13.244673488997982,
+  "stop": 68.1406,
+  "target1": 82.434,
+  "half_booked": false,
+  "realized": 0.0,
+  "trail_prices": [
+   [
+    "2026-07-09T16:10:43.313544+00:00",
+    74.94
+   ]
+  ],
+  "opened": "2026-07-09T16:10:43.313544+00:00",
+  "open_days": 0
+ }
+]

@@ -10,5 +10,32 @@
    "liste": "spekulativ",
    "status": "missed"
   }
+ ],
+ "2026-07-09": [
+  {
+   "id": "BBIO-2026-07-09",
+   "liste": "spekulativ",
+   "status": "missed"
+  },
+  {
+   "id": "PENG-2026-07-09",
+   "liste": "spekulativ",
+   "status": "missed"
+  },
+  {
+   "id": "QGEN-2026-07-09",
+   "liste": "konservativ",
+   "status": "missed"
+  },
+  {
+   "id": "PHVS-2026-07-09",
+   "liste": "spekulativ",
+   "status": "alert"
+  },
+  {
+   "id": "LASR-2026-07-09",
+   "liste": "spekulativ",
+   "status": "alert"
+  }
  ]
 }
