@@ -1,1 +1,62 @@
-[]
+[
+ {
+  "ticker": "WIX",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 70,
+  "breakout_level": 80.66,
+  "adr_pct": 7.19,
+  "avg_volume": 1907835.0,
+  "criteria": [
+   "volumen_aufbau:1.6x",
+   "nahe_ausbruch:-4.3%",
+   "trend_intakt"
+  ],
+  "name": "Wix.com Ltd."
+ },
+ {
+  "ticker": "CGEM",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 70,
+  "breakout_level": 21.22,
+  "adr_pct": 5.88,
+  "avg_volume": 631755.0,
+  "criteria": [
+   "volumen_aufbau:1.7x",
+   "nahe_ausbruch:-1.8%",
+   "trend_intakt"
+  ],
+  "name": "Cullinan Therapeutics, Inc."
+ },
+ {
+  "ticker": "KRNY",
+  "market": "us",
+  "liste": "konservativ",
+  "score": 70,
+  "breakout_level": 9.83,
+  "adr_pct": 2.0,
+  "avg_volume": 592440.0,
+  "criteria": [
+   "volumen_aufbau:1.6x",
+   "nahe_ausbruch:-0.5%",
+   "trend_intakt"
+  ],
+  "name": "Kearny Financial"
+ },
+ {
+  "ticker": "JCAP",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 70,
+  "breakout_level": 24.44,
+  "adr_pct": 3.19,
+  "avg_volume": 418475.0,
+  "criteria": [
+   "volumen_aufbau:1.9x",
+   "nahe_ausbruch:-4.6%",
+   "trend_intakt"
+  ],
+  "name": "Jefferson Capital, Inc."
+ }
+]
