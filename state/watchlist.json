@@ -1,49 +1,49 @@
 [
  {
-  "ticker": "CCC",
+  "ticker": "SBET",
   "market": "us",
   "liste": "spekulativ",
   "score": 90,
-  "breakout_level": 7.68,
-  "adr_pct": 5.31,
-  "avg_volume": 10614300.0,
+  "breakout_level": 8.54,
+  "adr_pct": 5.45,
+  "avg_volume": 8710795.0,
   "criteria": [
-   "volumen_aufbau:1.5x",
-   "nahe_ausbruch:-2.3%",
+   "volumen_aufbau:2.2x",
+   "nahe_ausbruch:-2.2%",
    "trend_intakt",
-   "rel_staerke:+63pp"
+   "rel_staerke:+35pp"
   ],
-  "name": "CCC Intelligent Solutions Holdings Inc."
+  "name": "Sharplink, Inc."
  },
  {
-  "ticker": "MRVI",
+  "ticker": "CPB",
   "market": "us",
-  "liste": "spekulativ",
+  "liste": "konservativ",
   "score": 90,
-  "breakout_level": 8.87,
-  "adr_pct": 6.17,
-  "avg_volume": 3789360.0,
+  "breakout_level": 24.26,
+  "adr_pct": 2.76,
+  "avg_volume": 5470695.0,
   "criteria": [
-   "volumen_aufbau:4.5x",
-   "nahe_ausbruch:-5.0%",
+   "volumen_aufbau:1.5x",
+   "nahe_ausbruch:-3.3%",
    "trend_intakt",
-   "rel_staerke:+81pp"
+   "rel_staerke:+12pp"
   ],
-  "name": "Maravai LifeSciences Holdings, Inc."
+  "name": "The Campbell's Company"
  },
  {
   "ticker": "AVAH",
   "market": "us",
   "liste": "spekulativ",
   "score": 90,
-  "breakout_level": 13.605,
-  "adr_pct": 4.96,
-  "avg_volume": 3413920.0,
+  "breakout_level": 13.98,
+  "adr_pct": 5.0,
+  "avg_volume": 3480950.0,
   "criteria": [
-   "volumen_aufbau:1.8x",
-   "nahe_ausbruch:0.7%",
+   "volumen_aufbau:1.6x",
+   "nahe_ausbruch:-2.8%",
    "trend_intakt",
-   "rel_staerke:+86pp"
+   "rel_staerke:+88pp"
   ],
   "name": "Aveanna Healthcare Holdings Inc."
  },
@@ -53,31 +53,15 @@
   "liste": "spekulativ",
   "score": 90,
   "breakout_level": 5.45,
-  "adr_pct": 3.83,
-  "avg_volume": 3040120.0,
+  "adr_pct": 3.82,
+  "avg_volume": 3453830.0,
   "criteria": [
-   "volumen_aufbau:6.7x",
+   "volumen_aufbau:8.1x",
    "nahe_ausbruch:-4.6%",
    "trend_intakt",
-   "rel_staerke:+12pp"
+   "rel_staerke:+13pp"
   ],
   "name": "Arbutus Biopharma Corporation"
- },
- {
-  "ticker": "GMAB",
-  "market": "us",
-  "liste": "konservativ",
-  "score": 90,
-  "breakout_level": 34.185,
-  "adr_pct": 2.15,
-  "avg_volume": 2865240.0,
-  "criteria": [
-   "volumen_aufbau:1.6x",
-   "nahe_ausbruch:-3.4%",
-   "trend_intakt",
-   "rel_staerke:+21pp"
-  ],
-  "name": "Genmab A/S"
  },
  {
   "ticker": "DLO",
@@ -85,13 +69,13 @@
   "liste": "spekulativ",
   "score": 90,
   "breakout_level": 15.65,
-  "adr_pct": 3.68,
-  "avg_volume": 2513515.0,
+  "adr_pct": 3.7,
+  "avg_volume": 2575520.0,
   "criteria": [
-   "volumen_aufbau:2.0x",
-   "nahe_ausbruch:-3.4%",
+   "volumen_aufbau:1.8x",
+   "nahe_ausbruch:-0.8%",
    "trend_intakt",
-   "rel_staerke:+28pp"
+   "rel_staerke:+30pp"
   ],
   "name": "DLocal Limited"
  },
@@ -100,48 +84,64 @@
   "market": "us",
   "liste": "spekulativ",
   "score": 90,
-  "breakout_level": 31.43,
-  "adr_pct": 5.28,
-  "avg_volume": 2488800.0,
+  "breakout_level": 31.9,
+  "adr_pct": 5.17,
+  "avg_volume": 2521825.0,
   "criteria": [
-   "volumen_aufbau:1.9x",
-   "nahe_ausbruch:0.0%",
+   "volumen_aufbau:1.8x",
+   "nahe_ausbruch:-3.4%",
    "trend_intakt",
-   "rel_staerke:+33pp"
+   "rel_staerke:+19pp"
   ],
   "name": "Braze, Inc."
  },
  {
-  "ticker": "HTFL",
+  "ticker": "CRSP",
   "market": "us",
   "liste": "spekulativ",
   "score": 90,
-  "breakout_level": 50.48,
-  "adr_pct": 6.08,
-  "avg_volume": 2002155.0,
+  "breakout_level": 62.535,
+  "adr_pct": 4.15,
+  "avg_volume": 1558545.0,
   "criteria": [
-   "volumen_aufbau:1.7x",
-   "nahe_ausbruch:-0.6%",
+   "volumen_aufbau:1.8x",
+   "nahe_ausbruch:-2.6%",
    "trend_intakt",
-   "rel_staerke:+57pp"
+   "rel_staerke:+7pp"
   ],
-  "name": "Heartflow, Inc."
+  "name": "CRISPR Therapeutics AG"
  },
  {
-  "ticker": "JKHY",
+  "ticker": "FUTU",
   "market": "us",
   "liste": "spekulativ",
   "score": 90,
-  "breakout_level": 169.37,
-  "adr_pct": 3.08,
-  "avg_volume": 966210.0,
+  "breakout_level": 124.48,
+  "adr_pct": 3.88,
+  "avg_volume": 1469450.0,
   "criteria": [
-   "volumen_aufbau:1.5x",
-   "nahe_ausbruch:0.7%",
+   "volumen_aufbau:2.5x",
+   "nahe_ausbruch:0.9%",
    "trend_intakt",
-   "rel_staerke:+25pp"
+   "rel_staerke:+19pp"
   ],
-  "name": "Jack Henry & Associates, Inc."
+  "name": "Futu Holdings Limited"
+ },
+ {
+  "ticker": "IMNM",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 90,
+  "breakout_level": 30.06,
+  "adr_pct": 5.47,
+  "avg_volume": 1206760.0,
+  "criteria": [
+   "volumen_aufbau:1.6x",
+   "nahe_ausbruch:-2.2%",
+   "trend_intakt",
+   "rel_staerke:+33pp"
+  ],
+  "name": "Immunome, Inc."
  },
  {
   "ticker": "AUGO",
@@ -149,31 +149,15 @@
   "liste": "spekulativ",
   "score": 90,
   "breakout_level": 90.1,
-  "adr_pct": 4.84,
-  "avg_volume": 960980.0,
+  "adr_pct": 4.88,
+  "avg_volume": 966490.0,
   "criteria": [
    "volumen_aufbau:1.6x",
-   "nahe_ausbruch:-3.0%",
+   "nahe_ausbruch:0.4%",
    "trend_intakt",
-   "rel_staerke:+15pp"
+   "rel_staerke:+17pp"
   ],
   "name": "Aura Minerals Inc."
- },
- {
-  "ticker": "GENB",
-  "market": "us",
-  "liste": "spekulativ",
-  "score": 90,
-  "breakout_level": 17.62,
-  "adr_pct": 6.39,
-  "avg_volume": 738955.0,
-  "criteria": [
-   "volumen_aufbau:2.4x",
-   "nahe_ausbruch:0.6%",
-   "trend_intakt",
-   "rel_staerke:+34pp"
-  ],
-  "name": "Generate Biomedicines, Inc."
  },
  {
   "ticker": "NHP",
@@ -181,15 +165,31 @@
   "liste": "spekulativ",
   "score": 90,
   "breakout_level": 17.46,
-  "adr_pct": 4.4,
-  "avg_volume": 691650.0,
+  "adr_pct": 4.18,
+  "avg_volume": 687780.0,
   "criteria": [
    "volumen_aufbau:1.5x",
-   "nahe_ausbruch:-4.9%",
+   "nahe_ausbruch:-4.7%",
    "trend_intakt",
-   "rel_staerke:+12pp"
+   "rel_staerke:+14pp"
   ],
   "name": "National Healthcare Properties, Inc."
+ },
+ {
+  "ticker": "ZYME",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 90,
+  "breakout_level": 28.83,
+  "adr_pct": 5.16,
+  "avg_volume": 634515.0,
+  "criteria": [
+   "volumen_aufbau:2.2x",
+   "nahe_ausbruch:-4.7%",
+   "trend_intakt",
+   "rel_staerke:+8pp"
+  ],
+  "name": "Zymeworks Inc."
  },
  {
   "ticker": "MGTX",
@@ -197,31 +197,15 @@
   "liste": "spekulativ",
   "score": 90,
   "breakout_level": 15.05,
-  "adr_pct": 5.12,
-  "avg_volume": 583635.0,
-  "criteria": [
-   "volumen_aufbau:1.7x",
-   "nahe_ausbruch:-1.5%",
-   "trend_intakt",
-   "rel_staerke:+47pp"
-  ],
-  "name": "MeiraGTx Holdings plc"
- },
- {
-  "ticker": "ZYME",
-  "market": "us",
-  "liste": "spekulativ",
-  "score": 90,
-  "breakout_level": 28.74,
-  "adr_pct": 4.52,
-  "avg_volume": 548585.0,
+  "adr_pct": 5.09,
+  "avg_volume": 595075.0,
   "criteria": [
    "volumen_aufbau:1.6x",
-   "nahe_ausbruch:0.1%",
+   "nahe_ausbruch:-0.9%",
    "trend_intakt",
-   "rel_staerke:+12pp"
+   "rel_staerke:+39pp"
   ],
-  "name": "Zymeworks Inc."
+  "name": "MeiraGTx Holdings plc"
  },
  {
   "ticker": "NDSN",
@@ -229,27 +213,43 @@
   "liste": "konservativ",
   "score": 90,
   "breakout_level": 338.55,
-  "adr_pct": 2.21,
-  "avg_volume": 420575.0,
+  "adr_pct": 2.16,
+  "avg_volume": 421655.0,
   "criteria": [
-   "volumen_aufbau:2.4x",
-   "nahe_ausbruch:-1.4%",
+   "volumen_aufbau:2.1x",
+   "nahe_ausbruch:-1.5%",
    "trend_intakt",
    "rel_staerke:+15pp"
   ],
   "name": "Nordson Corporation"
  },
  {
+  "ticker": "JOYY",
+  "market": "us",
+  "liste": "konservativ",
+  "score": 90,
+  "breakout_level": 76.68,
+  "adr_pct": 2.31,
+  "avg_volume": 287605.0,
+  "criteria": [
+   "volumen_aufbau:1.6x",
+   "nahe_ausbruch:-2.2%",
+   "trend_intakt",
+   "rel_staerke:+13pp"
+  ],
+  "name": "JOYY Inc."
+ },
+ {
   "ticker": "ASMB",
   "market": "us",
   "liste": "spekulativ",
   "score": 90,
-  "breakout_level": 35.62,
-  "adr_pct": 5.51,
-  "avg_volume": 242440.0,
+  "breakout_level": 36.12,
+  "adr_pct": 5.56,
+  "avg_volume": 265810.0,
   "criteria": [
-   "volumen_aufbau:2.0x",
-   "nahe_ausbruch:-1.0%",
+   "volumen_aufbau:1.8x",
+   "nahe_ausbruch:-2.2%",
    "trend_intakt",
    "rel_staerke:+26pp"
   ],
@@ -260,12 +260,12 @@
   "market": "us",
   "liste": "spekulativ",
   "score": 90,
-  "breakout_level": 40.155,
-  "adr_pct": 6.03,
-  "avg_volume": 192345.0,
+  "breakout_level": 40.82,
+  "adr_pct": 6.12,
+  "avg_volume": 209690.0,
   "criteria": [
-   "volumen_aufbau:1.6x",
-   "nahe_ausbruch:-1.3%",
+   "volumen_aufbau:2.2x",
+   "nahe_ausbruch:0.0%",
    "trend_intakt",
    "rel_staerke:+43pp"
   ],
@@ -278,75 +278,77 @@
   "score": 90,
   "breakout_level": 39.325,
   "adr_pct": 4.38,
-  "avg_volume": 162725.0,
+  "avg_volume": 164465.0,
   "criteria": [
-   "volumen_aufbau:1.7x",
-   "nahe_ausbruch:-1.6%",
+   "volumen_aufbau:1.6x",
+   "nahe_ausbruch:-1.0%",
    "trend_intakt",
-   "rel_staerke:+20pp"
+   "rel_staerke:+12pp"
   ],
   "name": "Consensus Cloud Solutions, Inc."
  },
  {
-  "ticker": "STRK",
+  "ticker": "FRHC",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 90,
+  "breakout_level": 171.0,
+  "adr_pct": 4.41,
+  "avg_volume": 115110.0,
+  "criteria": [
+   "volumen_aufbau:2.6x",
+   "nahe_ausbruch:0.0%",
+   "trend_intakt",
+   "rel_staerke:+18pp"
+  ],
+  "name": "Freedom Holding Corp."
+ },
+ {
+  "ticker": "ATAT",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 80,
+  "breakout_level": 37.125,
+  "adr_pct": 3.03,
+  "avg_volume": 987435.0,
+  "criteria": [
+   "volumen_aufbau:1.9x",
+   "nahe_ausbruch:-4.0%",
+   "trend_intakt",
+   "rel_staerke:+4pp"
+  ],
+  "name": "Atour Lifestyle Holdings Limited"
+ },
+ {
+  "ticker": "MZTI",
   "market": "us",
   "liste": "konservativ",
   "score": 80,
-  "breakout_level": 73.39,
-  "adr_pct": 2.9,
-  "avg_volume": 98425.0,
+  "breakout_level": 118.42,
+  "adr_pct": 2.78,
+  "avg_volume": 327800.0,
   "criteria": [
-   "volumen_aufbau:1.6x",
+   "volumen_aufbau:1.5x",
    "nahe_ausbruch:-0.9%",
    "trend_intakt",
-   "rel_staerke:+1pp"
+   "rel_staerke:+5pp"
   ],
-  "name": "Strategy Inc"
+  "name": "The Marzetti Company"
  },
  {
-  "ticker": "KURA",
+  "ticker": "MSTR",
   "market": "us",
   "liste": "spekulativ",
   "score": 70,
-  "breakout_level": 12.9,
-  "adr_pct": 6.11,
-  "avg_volume": 1903680.0,
+  "breakout_level": 127.9,
+  "adr_pct": 5.59,
+  "avg_volume": 22970985.0,
   "criteria": [
-   "volumen_aufbau:2.1x",
-   "nahe_ausbruch:-3.9%",
-   "rel_staerke:+23pp"
+   "volumen_aufbau:2.7x",
+   "nahe_ausbruch:-0.8%",
+   "trend_intakt"
   ],
-  "name": "Kura Oncology, Inc."
- },
- {
-  "ticker": "SOFI",
-  "market": "us",
-  "liste": "spekulativ",
-  "score": 65,
-  "breakout_level": 19.17,
-  "adr_pct": 4.42,
-  "avg_volume": 60652125.0,
-  "criteria": [
-   "nahe_ausbruch:-4.9%",
-   "trend_intakt",
-   "rel_staerke:+6pp"
-  ],
-  "name": "SoFi Technologies, Inc."
- },
- {
-  "ticker": "PLTR",
-  "market": "us",
-  "liste": "spekulativ",
-  "score": 65,
-  "breakout_level": 182.44,
-  "adr_pct": 4.48,
-  "avg_volume": 47557670.0,
-  "criteria": [
-   "nahe_ausbruch:-3.6%",
-   "trend_intakt",
-   "rel_staerke:+22pp"
-  ],
-  "name": "Palantir Technologies Inc."
+  "name": "Strategy Inc"
  },
  {
   "ticker": "MSFT",
@@ -354,29 +356,14 @@
   "liste": "konservativ",
   "score": 65,
   "breakout_level": 512.7647,
-  "adr_pct": 2.42,
-  "avg_volume": 36121230.0,
+  "adr_pct": 2.38,
+  "avg_volume": 35478520.0,
   "criteria": [
-   "nahe_ausbruch:-5.0%",
-   "trend_intakt",
-   "rel_staerke:+13pp"
-  ],
-  "name": "Microsoft Corporation"
- },
- {
-  "ticker": "CMCSA",
-  "market": "us",
-  "liste": "konservativ",
-  "score": 65,
-  "breakout_level": 27.04,
-  "adr_pct": 2.48,
-  "avg_volume": 25479915.0,
-  "criteria": [
-   "nahe_ausbruch:-0.1%",
+   "nahe_ausbruch:-4.1%",
    "trend_intakt",
    "rel_staerke:+8pp"
   ],
-  "name": "Comcast Corporation"
+  "name": "Microsoft Corporation"
  },
  {
   "ticker": "MRNA",
@@ -384,14 +371,44 @@
   "liste": "spekulativ",
   "score": 65,
   "breakout_level": 176.66,
-  "adr_pct": 9.04,
-  "avg_volume": 25350935.0,
+  "adr_pct": 9.45,
+  "avg_volume": 27531995.0,
   "criteria": [
-   "volumen_aufbau:15.7x",
+   "volumen_aufbau:17.4x",
    "trend_intakt",
-   "rel_staerke:+191pp"
+   "rel_staerke:+235pp"
   ],
   "name": "Moderna, Inc."
+ },
+ {
+  "ticker": "CMCSA",
+  "market": "us",
+  "liste": "konservativ",
+  "score": 65,
+  "breakout_level": 27.18,
+  "adr_pct": 2.39,
+  "avg_volume": 24528995.0,
+  "criteria": [
+   "nahe_ausbruch:-0.3%",
+   "trend_intakt",
+   "rel_staerke:+9pp"
+  ],
+  "name": "Comcast Corporation"
+ },
+ {
+  "ticker": "WBD",
+  "market": "us",
+  "liste": "konservativ",
+  "score": 65,
+  "breakout_level": 28.94,
+  "adr_pct": 1.66,
+  "avg_volume": 21012130.0,
+  "criteria": [
+   "nahe_ausbruch:-0.1%",
+   "trend_intakt",
+   "rel_staerke:+6pp"
+  ],
+  "name": "Warner Bros. Discovery, Inc."
  },
  {
   "ticker": "AGNC",
@@ -399,10 +416,10 @@
   "liste": "konservativ",
   "score": 65,
   "breakout_level": 11.13,
-  "adr_pct": 1.65,
-  "avg_volume": 17466400.0,
+  "adr_pct": 1.52,
+  "avg_volume": 16591665.0,
   "criteria": [
-   "nahe_ausbruch:-1.3%",
+   "nahe_ausbruch:-2.0%",
    "trend_intakt",
    "rel_staerke:+6pp"
   ],
@@ -414,12 +431,12 @@
   "liste": "spekulativ",
   "score": 65,
   "breakout_level": 9.95,
-  "adr_pct": 5.2,
-  "avg_volume": 13824160.0,
+  "adr_pct": 5.34,
+  "avg_volume": 14593630.0,
   "criteria": [
-   "volumen_aufbau:3.5x",
+   "volumen_aufbau:3.9x",
    "trend_intakt",
-   "rel_staerke:+34pp"
+   "rel_staerke:+38pp"
   ],
   "name": "Webull Corporation"
  },
@@ -429,12 +446,12 @@
   "liste": "spekulativ",
   "score": 65,
   "breakout_level": 36.6369,
-  "adr_pct": 3.15,
-  "avg_volume": 11471540.0,
+  "adr_pct": 3.09,
+  "avg_volume": 11364210.0,
   "criteria": [
-   "nahe_ausbruch:-2.0%",
+   "nahe_ausbruch:-3.4%",
    "trend_intakt",
-   "rel_staerke:+14pp"
+   "rel_staerke:+12pp"
   ],
   "name": "Tractor Supply Company"
  },
@@ -443,15 +460,45 @@
   "market": "us",
   "liste": "spekulativ",
   "score": 65,
-  "breakout_level": 17.8,
-  "adr_pct": 3.83,
-  "avg_volume": 11207145.0,
+  "breakout_level": 17.87,
+  "adr_pct": 3.86,
+  "avg_volume": 11280495.0,
   "criteria": [
-   "nahe_ausbruch:-0.7%",
+   "nahe_ausbruch:-1.2%",
    "trend_intakt",
-   "rel_staerke:+27pp"
+   "rel_staerke:+24pp"
   ],
   "name": "Lyft, Inc."
+ },
+ {
+  "ticker": "SHOP",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 65,
+  "breakout_level": 158.87,
+  "adr_pct": 3.99,
+  "avg_volume": 10799260.0,
+  "criteria": [
+   "nahe_ausbruch:-3.1%",
+   "trend_intakt",
+   "rel_staerke:+28pp"
+  ],
+  "name": "Shopify Inc."
+ },
+ {
+  "ticker": "CCC",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 65,
+  "breakout_level": 7.68,
+  "adr_pct": 5.28,
+  "avg_volume": 10475265.0,
+  "criteria": [
+   "nahe_ausbruch:-2.9%",
+   "trend_intakt",
+   "rel_staerke:+57pp"
+  ],
+  "name": "CCC Intelligent Solutions Holdings Inc."
  },
  {
   "ticker": "PYPL",
@@ -459,10 +506,10 @@
   "liste": "konservativ",
   "score": 65,
   "breakout_level": 62.73,
-  "adr_pct": 2.35,
-  "avg_volume": 10965775.0,
+  "adr_pct": 2.26,
+  "avg_volume": 10337180.0,
   "criteria": [
-   "nahe_ausbruch:-1.7%",
+   "nahe_ausbruch:-0.7%",
    "trend_intakt",
    "rel_staerke:+38pp"
   ],
@@ -474,12 +521,12 @@
   "liste": "spekulativ",
   "score": 65,
   "breakout_level": 33.745,
-  "adr_pct": 5.2,
-  "avg_volume": 9989855.0,
+  "adr_pct": 5.08,
+  "avg_volume": 9915515.0,
   "criteria": [
-   "nahe_ausbruch:-3.1%",
+   "nahe_ausbruch:-1.9%",
    "trend_intakt",
-   "rel_staerke:+79pp"
+   "rel_staerke:+77pp"
   ],
   "name": "Chime Financial, Inc."
  },
@@ -489,12 +536,12 @@
   "liste": "spekulativ",
   "score": 65,
   "breakout_level": 13.97,
-  "adr_pct": 35.54,
-  "avg_volume": 9881455.0,
+  "adr_pct": 36.11,
+  "avg_volume": 9891665.0,
   "criteria": [
    "volumen_aufbau:9.9x",
    "trend_intakt",
-   "rel_staerke:+81pp"
+   "rel_staerke:+69pp"
   ],
   "name": "Yunji Inc."
  },
@@ -504,10 +551,10 @@
   "liste": "spekulativ",
   "score": 65,
   "breakout_level": 9.04,
-  "adr_pct": 4.58,
-  "avg_volume": 9759110.0,
+  "adr_pct": 4.52,
+  "avg_volume": 9689105.0,
   "criteria": [
-   "nahe_ausbruch:-2.2%",
+   "nahe_ausbruch:0.9%",
    "trend_intakt",
    "rel_staerke:+19pp"
   ],
@@ -519,44 +566,14 @@
   "liste": "spekulativ",
   "score": 65,
   "breakout_level": 63.11,
-  "adr_pct": 4.51,
-  "avg_volume": 9358600.0,
+  "adr_pct": 4.4,
+  "avg_volume": 8954165.0,
   "criteria": [
-   "nahe_ausbruch:-1.4%",
+   "nahe_ausbruch:-0.1%",
    "trend_intakt",
-   "rel_staerke:+15pp"
+   "rel_staerke:+12pp"
   ],
   "name": "Cognizant Technology Solutions Corporation"
- },
- {
-  "ticker": "XOS",
-  "market": "us",
-  "liste": "spekulativ",
-  "score": 65,
-  "breakout_level": 4.95,
-  "adr_pct": 12.65,
-  "avg_volume": 8455920.0,
-  "criteria": [
-   "volumen_aufbau:16.2x",
-   "trend_intakt",
-   "rel_staerke:+51pp"
-  ],
-  "name": "Xos, Inc."
- },
- {
-  "ticker": "FRSH",
-  "market": "us",
-  "liste": "spekulativ",
-  "score": 65,
-  "breakout_level": 13.255,
-  "adr_pct": 4.29,
-  "avg_volume": 7925540.0,
-  "criteria": [
-   "nahe_ausbruch:-0.5%",
-   "trend_intakt",
-   "rel_staerke:+45pp"
-  ],
-  "name": "Freshworks Inc."
  },
  {
   "ticker": "SBUX",
@@ -564,44 +581,59 @@
   "liste": "konservativ",
   "score": 65,
   "breakout_level": 109.8788,
-  "adr_pct": 2.78,
-  "avg_volume": 7731420.0,
+  "adr_pct": 2.7,
+  "avg_volume": 7667920.0,
   "criteria": [
-   "nahe_ausbruch:-2.2%",
+   "nahe_ausbruch:-3.7%",
    "trend_intakt",
    "rel_staerke:+6pp"
   ],
   "name": "Starbucks Corporation"
  },
  {
-  "ticker": "FAST",
-  "market": "us",
-  "liste": "konservativ",
-  "score": 65,
-  "breakout_level": 52.92,
-  "adr_pct": 2.2,
-  "avg_volume": 7702845.0,
-  "criteria": [
-   "nahe_ausbruch:-3.1%",
-   "trend_intakt",
-   "rel_staerke:+14pp"
-  ],
-  "name": "Fastenal Company"
- },
- {
-  "ticker": "IPST",
+  "ticker": "FRSH",
   "market": "us",
   "liste": "spekulativ",
   "score": 65,
-  "breakout_level": 25.34,
-  "adr_pct": 26.63,
-  "avg_volume": 7422495.0,
+  "breakout_level": 13.275,
+  "adr_pct": 4.26,
+  "avg_volume": 7624625.0,
   "criteria": [
-   "volumen_aufbau:1.6x",
+   "nahe_ausbruch:-3.1%",
    "trend_intakt",
-   "rel_staerke:+71pp"
+   "rel_staerke:+31pp"
   ],
-  "name": "IP Strategy Holdings, Inc."
+  "name": "Freshworks Inc."
+ },
+ {
+  "ticker": "TEM",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 65,
+  "breakout_level": 72.96,
+  "adr_pct": 7.31,
+  "avg_volume": 7341915.0,
+  "criteria": [
+   "volumen_aufbau:3.4x",
+   "trend_intakt",
+   "rel_staerke:+35pp"
+  ],
+  "name": "Tempus AI, Inc."
+ },
+ {
+  "ticker": "REPL",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 65,
+  "breakout_level": 15.705,
+  "adr_pct": 10.7,
+  "avg_volume": 6713090.0,
+  "criteria": [
+   "nahe_ausbruch:0.6%",
+   "trend_intakt",
+   "rel_staerke:+81pp"
+  ],
+  "name": "Replimune Group, Inc."
  },
  {
   "ticker": "GILD",
@@ -609,12 +641,12 @@
   "liste": "konservativ",
   "score": 65,
   "breakout_level": 148.97,
-  "adr_pct": 2.74,
-  "avg_volume": 6794415.0,
+  "adr_pct": 2.72,
+  "avg_volume": 6678650.0,
   "criteria": [
-   "nahe_ausbruch:-1.5%",
+   "nahe_ausbruch:-0.1%",
    "trend_intakt",
-   "rel_staerke:+7pp"
+   "rel_staerke:+10pp"
   ],
   "name": "Gilead Sciences, Inc."
  },
@@ -624,29 +656,14 @@
   "liste": "spekulativ",
   "score": 65,
   "breakout_level": 15.67,
-  "adr_pct": 8.5,
-  "avg_volume": 6548620.0,
-  "criteria": [
-   "volumen_aufbau:1.6x",
-   "trend_intakt",
-   "rel_staerke:+55pp"
-  ],
-  "name": "SELLAS Life Sciences Group, Inc."
- },
- {
-  "ticker": "REAX",
-  "market": "us",
-  "liste": "spekulativ",
-  "score": 65,
-  "breakout_level": 2.85,
-  "adr_pct": 7.93,
-  "avg_volume": 6475750.0,
+  "adr_pct": 8.41,
+  "avg_volume": 6450675.0,
   "criteria": [
    "volumen_aufbau:1.7x",
    "trend_intakt",
-   "rel_staerke:+36pp"
+   "rel_staerke:+50pp"
   ],
-  "name": "The Real Brokerage, Inc."
+  "name": "SELLAS Life Sciences Group, Inc."
  },
  {
   "ticker": "PGEN",
@@ -654,44 +671,14 @@
   "liste": "spekulativ",
   "score": 65,
   "breakout_level": 7.5,
-  "adr_pct": 6.51,
-  "avg_volume": 6194140.0,
+  "adr_pct": 6.41,
+  "avg_volume": 6297815.0,
   "criteria": [
-   "nahe_ausbruch:-4.4%",
+   "nahe_ausbruch:-2.9%",
    "trend_intakt",
-   "rel_staerke:+58pp"
+   "rel_staerke:+66pp"
   ],
   "name": "Precigen, Inc."
- },
- {
-  "ticker": "APA",
-  "market": "us",
-  "liste": "spekulativ",
-  "score": 65,
-  "breakout_level": 45.05,
-  "adr_pct": 3.38,
-  "avg_volume": 6090145.0,
-  "criteria": [
-   "nahe_ausbruch:-4.6%",
-   "trend_intakt",
-   "rel_staerke:+17pp"
-  ],
-  "name": "APA Corporation"
- },
- {
-  "ticker": "BKNG",
-  "market": "us",
-  "liste": "spekulativ",
-  "score": 65,
-  "breakout_level": 216.42,
-  "adr_pct": 3.31,
-  "avg_volume": 5961260.0,
-  "criteria": [
-   "nahe_ausbruch:-1.4%",
-   "trend_intakt",
-   "rel_staerke:+25pp"
-  ],
-  "name": "Booking Holdings Inc."
  },
  {
   "ticker": "ROIV",
@@ -699,104 +686,59 @@
   "liste": "spekulativ",
   "score": 65,
   "breakout_level": 37.97,
-  "adr_pct": 3.42,
-  "avg_volume": 5780455.0,
+  "adr_pct": 3.36,
+  "avg_volume": 5784520.0,
   "criteria": [
-   "nahe_ausbruch:-4.2%",
+   "nahe_ausbruch:-4.0%",
    "trend_intakt",
-   "rel_staerke:+21pp"
+   "rel_staerke:+20pp"
   ],
   "name": "Roivant Sciences Ltd."
+ },
+ {
+  "ticker": "BKNG",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 65,
+  "breakout_level": 216.42,
+  "adr_pct": 3.15,
+  "avg_volume": 5784085.0,
+  "criteria": [
+   "nahe_ausbruch:-1.2%",
+   "trend_intakt",
+   "rel_staerke:+27pp"
+  ],
+  "name": "Booking Holdings Inc."
  },
  {
   "ticker": "DXCM",
   "market": "us",
   "liste": "spekulativ",
   "score": 65,
-  "breakout_level": 92.56,
+  "breakout_level": 92.59,
   "adr_pct": 3.06,
-  "avg_volume": 5738390.0,
-  "criteria": [
-   "nahe_ausbruch:-1.6%",
-   "trend_intakt",
-   "rel_staerke:+25pp"
-  ],
-  "name": "DexCom, Inc."
- },
- {
-  "ticker": "CPB",
-  "market": "us",
-  "liste": "konservativ",
-  "score": 65,
-  "breakout_level": 24.26,
-  "adr_pct": 2.72,
-  "avg_volume": 5642210.0,
-  "criteria": [
-   "nahe_ausbruch:-0.4%",
-   "trend_intakt",
-   "rel_staerke:+17pp"
-  ],
-  "name": "The Campbell's Company"
- },
- {
-  "ticker": "TEAM",
-  "market": "us",
-  "liste": "spekulativ",
-  "score": 65,
-  "breakout_level": 177.88,
-  "adr_pct": 5.29,
-  "avg_volume": 5548665.0,
+  "avg_volume": 5737680.0,
   "criteria": [
    "nahe_ausbruch:-3.7%",
    "trend_intakt",
-   "rel_staerke:+82pp"
+   "rel_staerke:+20pp"
   ],
-  "name": "Atlassian Corporation"
+  "name": "DexCom, Inc."
  },
  {
   "ticker": "ABNB",
   "market": "us",
   "liste": "spekulativ",
   "score": 65,
-  "breakout_level": 189.2,
-  "adr_pct": 3.13,
-  "avg_volume": 5546415.0,
+  "breakout_level": 193.453,
+  "adr_pct": 3.03,
+  "avg_volume": 5429435.0,
   "criteria": [
-   "nahe_ausbruch:0.5%",
+   "nahe_ausbruch:-1.5%",
    "trend_intakt",
-   "rel_staerke:+40pp"
+   "rel_staerke:+42pp"
   ],
   "name": "Airbnb, Inc."
- },
- {
-  "ticker": "CAI",
-  "market": "us",
-  "liste": "spekulativ",
-  "score": 65,
-  "breakout_level": 26.6,
-  "adr_pct": 5.35,
-  "avg_volume": 5423035.0,
-  "criteria": [
-   "nahe_ausbruch:-1.8%",
-   "trend_intakt",
-   "rel_staerke:+56pp"
-  ],
-  "name": "Caris Life Sciences, Inc."
- },
- {
-  "ticker": "CLBK",
-  "market": "us",
-  "liste": "konservativ",
-  "score": 65,
-  "breakout_level": 12.0,
-  "adr_pct": 2.04,
-  "avg_volume": 5269080.0,
-  "criteria": [
-   "nahe_ausbruch:-1.8%",
-   "trend_intakt",
-   "rel_staerke:+29pp"
-  ],
-  "name": "Columbia Financial, Inc."
  },
  {
   "ticker": "GEN",
@@ -804,59 +746,89 @@
   "liste": "spekulativ",
   "score": 65,
   "breakout_level": 29.7389,
-  "adr_pct": 3.15,
-  "avg_volume": 5220270.0,
+  "adr_pct": 3.16,
+  "avg_volume": 5339715.0,
   "criteria": [
-   "nahe_ausbruch:-2.1%",
+   "nahe_ausbruch:-1.4%",
    "trend_intakt",
-   "rel_staerke:+18pp"
+   "rel_staerke:+13pp"
   ],
   "name": "Gen Digital Inc."
  },
  {
-  "ticker": "ADBE",
+  "ticker": "FOXA",
   "market": "us",
-  "liste": "spekulativ",
+  "liste": "konservativ",
   "score": 65,
-  "breakout_level": 277.1,
-  "adr_pct": 3.98,
-  "avg_volume": 4921330.0,
+  "breakout_level": 70.95,
+  "adr_pct": 2.73,
+  "avg_volume": 5320005.0,
   "criteria": [
-   "nahe_ausbruch:-0.3%",
+   "nahe_ausbruch:-0.9%",
    "trend_intakt",
-   "rel_staerke:+13pp"
+   "rel_staerke:+9pp"
   ],
-  "name": "Adobe Inc."
+  "name": "Fox Corporation"
  },
  {
-  "ticker": "FIGR",
+  "ticker": "CLBK",
   "market": "us",
-  "liste": "spekulativ",
+  "liste": "konservativ",
   "score": 65,
-  "breakout_level": 39.68,
-  "adr_pct": 7.15,
-  "avg_volume": 4527930.0,
+  "breakout_level": 12.0,
+  "adr_pct": 2.05,
+  "avg_volume": 5023900.0,
   "criteria": [
-   "nahe_ausbruch:-2.6%",
+   "nahe_ausbruch:-2.9%",
    "trend_intakt",
-   "rel_staerke:+10pp"
+   "rel_staerke:+27pp"
   ],
-  "name": "Figure Technology Solutions, Inc."
+  "name": "Columbia Financial, Inc."
  },
  {
   "ticker": "CART",
   "market": "us",
   "liste": "spekulativ",
   "score": 65,
-  "breakout_level": 51.815,
-  "adr_pct": 3.72,
-  "avg_volume": 4497120.0,
+  "breakout_level": 51.91,
+  "adr_pct": 3.68,
+  "avg_volume": 4464310.0,
   "criteria": [
-   "nahe_ausbruch:-0.1%",
+   "nahe_ausbruch:-0.8%",
    "trend_intakt",
    "rel_staerke:+28pp"
   ],
   "name": "Maplebear Inc."
+ },
+ {
+  "ticker": "BZ",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 65,
+  "breakout_level": 17.47,
+  "adr_pct": 3.8,
+  "avg_volume": 4413305.0,
+  "criteria": [
+   "volumen_aufbau:2.1x",
+   "trend_intakt",
+   "rel_staerke:+19pp"
+  ],
+  "name": "KANZHUN LIMITED"
+ },
+ {
+  "ticker": "GTLB",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 65,
+  "breakout_level": 43.81,
+  "adr_pct": 4.74,
+  "avg_volume": 4192690.0,
+  "criteria": [
+   "nahe_ausbruch:-4.9%",
+   "trend_intakt",
+   "rel_staerke:+33pp"
+  ],
+  "name": "GitLab Inc."
  },
  {
   "ticker": "ARCC",
@@ -864,12 +836,12 @@
   "liste": "konservativ",
   "score": 65,
   "breakout_level": 20.23,
-  "adr_pct": 1.57,
-  "avg_volume": 4292575.0,
+  "adr_pct": 1.58,
+  "avg_volume": 4139910.0,
   "criteria": [
-   "nahe_ausbruch:-0.9%",
+   "nahe_ausbruch:-1.5%",
    "trend_intakt",
-   "rel_staerke:+8pp"
+   "rel_staerke:+6pp"
   ],
   "name": "Ares Capital Corporation"
  },
@@ -879,29 +851,29 @@
   "liste": "spekulativ",
   "score": 65,
   "breakout_level": 36.3,
-  "adr_pct": 3.63,
-  "avg_volume": 4268100.0,
+  "adr_pct": 3.51,
+  "avg_volume": 4098775.0,
   "criteria": [
-   "nahe_ausbruch:-3.9%",
+   "nahe_ausbruch:-4.2%",
    "trend_intakt",
-   "rel_staerke:+32pp"
+   "rel_staerke:+28pp"
   ],
   "name": "Dropbox, Inc."
  },
  {
-  "ticker": "GTLB",
+  "ticker": "SABR",
   "market": "us",
   "liste": "spekulativ",
   "score": 65,
-  "breakout_level": 43.81,
-  "adr_pct": 4.95,
-  "avg_volume": 4261480.0,
+  "breakout_level": 2.295,
+  "adr_pct": 6.8,
+  "avg_volume": 4014760.0,
   "criteria": [
-   "nahe_ausbruch:-4.1%",
+   "nahe_ausbruch:-1.5%",
    "trend_intakt",
-   "rel_staerke:+49pp"
+   "rel_staerke:+27pp"
   ],
-  "name": "GitLab Inc."
+  "name": "Sabre Corporation"
  },
  {
   "ticker": "JUNS",
@@ -909,29 +881,29 @@
   "liste": "spekulativ",
   "score": 65,
   "breakout_level": 11.2,
-  "adr_pct": 16.85,
-  "avg_volume": 4105853.85,
+  "adr_pct": 17.04,
+  "avg_volume": 4000543.85,
   "criteria": [
-   "volumen_aufbau:4.3x",
+   "volumen_aufbau:4.8x",
    "trend_intakt",
-   "rel_staerke:+1851pp"
+   "rel_staerke:+1918pp"
   ],
   "name": "Jupiter Neurosciences, Inc."
  },
  {
-  "ticker": "GEHC",
+  "ticker": "TNON",
   "market": "us",
-  "liste": "konservativ",
+  "liste": "spekulativ",
   "score": 65,
-  "breakout_level": 75.65,
-  "adr_pct": 2.53,
-  "avg_volume": 4095380.0,
+  "breakout_level": 17.84,
+  "adr_pct": 18.31,
+  "avg_volume": 3978337.15,
   "criteria": [
-   "nahe_ausbruch:-1.9%",
+   "volumen_aufbau:7.3x",
    "trend_intakt",
-   "rel_staerke:+17pp"
+   "rel_staerke:+713pp"
   ],
-  "name": "GE HealthCare Technologies Inc."
+  "name": "Tenon Medical, Inc."
  },
  {
   "ticker": "AMLX",
@@ -940,86 +912,56 @@
   "score": 65,
   "breakout_level": 41.14,
   "adr_pct": 7.41,
-  "avg_volume": 4020995.0,
+  "avg_volume": 3957780.0,
   "criteria": [
-   "volumen_aufbau:4.8x",
+   "volumen_aufbau:1.8x",
    "trend_intakt",
-   "rel_staerke:+167pp"
+   "rel_staerke:+160pp"
   ],
   "name": "Amylyx Pharmaceuticals, Inc."
- },
- {
-  "ticker": "TNON",
-  "market": "us",
-  "liste": "spekulativ",
-  "score": 65,
-  "breakout_level": 17.84,
-  "adr_pct": 18.11,
-  "avg_volume": 3994312.15,
-  "criteria": [
-   "volumen_aufbau:14.8x",
-   "trend_intakt",
-   "rel_staerke:+803pp"
-  ],
-  "name": "Tenon Medical, Inc."
- },
- {
-  "ticker": "SABR",
-  "market": "us",
-  "liste": "spekulativ",
-  "score": 65,
-  "breakout_level": 2.295,
-  "adr_pct": 6.93,
-  "avg_volume": 3970625.0,
-  "criteria": [
-   "nahe_ausbruch:-1.5%",
-   "trend_intakt",
-   "rel_staerke:+34pp"
-  ],
-  "name": "Sabre Corporation"
  },
  {
   "ticker": "NWSA",
   "market": "us",
   "liste": "konservativ",
   "score": 65,
-  "breakout_level": 30.88,
-  "adr_pct": 2.62,
-  "avg_volume": 3843075.0,
+  "breakout_level": 30.89,
+  "adr_pct": 2.57,
+  "avg_volume": 3818200.0,
   "criteria": [
-   "nahe_ausbruch:-0.4%",
+   "nahe_ausbruch:0.1%",
    "trend_intakt",
-   "rel_staerke:+15pp"
+   "rel_staerke:+17pp"
   ],
   "name": "News Corporation"
  },
  {
-  "ticker": "SLE",
+  "ticker": "GEHC",
   "market": "us",
-  "liste": "spekulativ",
+  "liste": "konservativ",
   "score": 65,
-  "breakout_level": 7.37,
-  "adr_pct": 15.87,
-  "avg_volume": 3799095.0,
+  "breakout_level": 75.65,
+  "adr_pct": 2.39,
+  "avg_volume": 3796680.0,
   "criteria": [
-   "volumen_aufbau:9.8x",
+   "nahe_ausbruch:-2.3%",
    "trend_intakt",
-   "rel_staerke:+26pp"
+   "rel_staerke:+17pp"
   ],
-  "name": "Super League Enterprise, Inc."
+  "name": "GE HealthCare Technologies Inc."
  },
  {
   "ticker": "INTU",
   "market": "us",
   "liste": "spekulativ",
   "score": 65,
-  "breakout_level": 371.7,
-  "adr_pct": 3.84,
-  "avg_volume": 3697480.0,
+  "breakout_level": 372.98,
+  "adr_pct": 3.78,
+  "avg_volume": 3762440.0,
   "criteria": [
-   "nahe_ausbruch:-0.5%",
+   "nahe_ausbruch:-4.2%",
    "trend_intakt",
-   "rel_staerke:+18pp"
+   "rel_staerke:+7pp"
   ],
   "name": "Intuit Inc."
  },
@@ -1029,29 +971,14 @@
   "liste": "spekulativ",
   "score": 65,
   "breakout_level": 18.89,
-  "adr_pct": 5.08,
-  "avg_volume": 3593625.0,
+  "adr_pct": 5.07,
+  "avg_volume": 3597965.0,
   "criteria": [
-   "volumen_aufbau:2.5x",
+   "volumen_aufbau:2.9x",
    "trend_intakt",
-   "rel_staerke:+54pp"
+   "rel_staerke:+50pp"
   ],
   "name": "Personalis, Inc."
- },
- {
-  "ticker": "KMB",
-  "market": "us",
-  "liste": "konservativ",
-  "score": 65,
-  "breakout_level": 115.47,
-  "adr_pct": 2.52,
-  "avg_volume": 3453410.0,
-  "criteria": [
-   "nahe_ausbruch:-3.6%",
-   "trend_intakt",
-   "rel_staerke:+12pp"
-  ],
-  "name": "Kimberly-Clark Corporation"
  },
  {
   "ticker": "TPG",
@@ -1059,14 +986,29 @@
   "liste": "spekulativ",
   "score": 65,
   "breakout_level": 55.5,
-  "adr_pct": 4.26,
-  "avg_volume": 3416155.0,
+  "adr_pct": 4.18,
+  "avg_volume": 3356260.0,
   "criteria": [
-   "nahe_ausbruch:-4.8%",
+   "nahe_ausbruch:-4.7%",
    "trend_intakt",
-   "rel_staerke:+26pp"
+   "rel_staerke:+24pp"
   ],
   "name": "TPG Inc."
+ },
+ {
+  "ticker": "MTCH",
+  "market": "us",
+  "liste": "konservativ",
+  "score": 65,
+  "breakout_level": 41.785,
+  "adr_pct": 2.91,
+  "avg_volume": 3336160.0,
+  "criteria": [
+   "nahe_ausbruch:0.9%",
+   "trend_intakt",
+   "rel_staerke:+16pp"
+  ],
+  "name": "Match Group, Inc."
  },
  {
   "ticker": "RELY",
@@ -1074,44 +1016,14 @@
   "liste": "spekulativ",
   "score": 65,
   "breakout_level": 27.15,
-  "adr_pct": 5.08,
-  "avg_volume": 3371445.0,
+  "adr_pct": 5.0,
+  "avg_volume": 3334375.0,
   "criteria": [
-   "nahe_ausbruch:-2.1%",
+   "nahe_ausbruch:-3.4%",
    "trend_intakt",
-   "rel_staerke:+32pp"
+   "rel_staerke:+30pp"
   ],
   "name": "Remitly Global, Inc."
- },
- {
-  "ticker": "TTEK",
-  "market": "us",
-  "liste": "spekulativ",
-  "score": 65,
-  "breakout_level": 37.44,
-  "adr_pct": 3.34,
-  "avg_volume": 3339810.0,
-  "criteria": [
-   "nahe_ausbruch:-1.5%",
-   "trend_intakt",
-   "rel_staerke:+32pp"
-  ],
-  "name": "Tetra Tech, Inc."
- },
- {
-  "ticker": "MTCH",
-  "market": "us",
-  "liste": "konservativ",
-  "score": 65,
-  "breakout_level": 41.4,
-  "adr_pct": 2.88,
-  "avg_volume": 3257625.0,
-  "criteria": [
-   "nahe_ausbruch:0.8%",
-   "trend_intakt",
-   "rel_staerke:+14pp"
-  ],
-  "name": "Match Group, Inc."
  },
  {
   "ticker": "RNW",
@@ -1119,29 +1031,44 @@
   "liste": "konservativ",
   "score": 65,
   "breakout_level": 6.85,
-  "adr_pct": 1.62,
-  "avg_volume": 3197300.0,
+  "adr_pct": 1.51,
+  "avg_volume": 3302235.0,
   "criteria": [
-   "nahe_ausbruch:-0.7%",
+   "nahe_ausbruch:-0.6%",
    "trend_intakt",
-   "rel_staerke:+8pp"
+   "rel_staerke:+5pp"
   ],
   "name": "ReNew Energy Global plc"
  },
  {
-  "ticker": "SSRM",
+  "ticker": "TTEK",
   "market": "us",
   "liste": "spekulativ",
   "score": 65,
-  "breakout_level": 38.4,
-  "adr_pct": 4.39,
-  "avg_volume": 3197130.0,
+  "breakout_level": 37.59,
+  "adr_pct": 3.19,
+  "avg_volume": 3296255.0,
   "criteria": [
-   "nahe_ausbruch:0.5%",
+   "nahe_ausbruch:-2.1%",
    "trend_intakt",
-   "rel_staerke:+27pp"
+   "rel_staerke:+33pp"
   ],
-  "name": "SSR Mining Inc."
+  "name": "Tetra Tech, Inc."
+ },
+ {
+  "ticker": "CMPX",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 65,
+  "breakout_level": 2.52,
+  "adr_pct": 6.0,
+  "avg_volume": 3292610.0,
+  "criteria": [
+   "nahe_ausbruch:0.4%",
+   "trend_intakt",
+   "rel_staerke:+5pp"
+  ],
+  "name": "Compass Therapeutics, Inc."
  },
  {
   "ticker": "TXG",
@@ -1149,29 +1076,29 @@
   "liste": "spekulativ",
   "score": 65,
   "breakout_level": 65.47,
-  "adr_pct": 6.66,
-  "avg_volume": 3195005.0,
+  "adr_pct": 6.75,
+  "avg_volume": 3272870.0,
   "criteria": [
-   "nahe_ausbruch:-2.6%",
+   "nahe_ausbruch:-1.1%",
    "trend_intakt",
    "rel_staerke:+127pp"
   ],
   "name": "10x Genomics, Inc."
  },
  {
-  "ticker": "SHC",
+  "ticker": "PGY",
   "market": "us",
-  "liste": "konservativ",
+  "liste": "spekulativ",
   "score": 65,
-  "breakout_level": 19.788,
-  "adr_pct": 2.74,
-  "avg_volume": 3137140.0,
+  "breakout_level": 23.22,
+  "adr_pct": 6.24,
+  "avg_volume": 3220790.0,
   "criteria": [
-   "nahe_ausbruch:-3.1%",
+   "nahe_ausbruch:-4.1%",
    "trend_intakt",
-   "rel_staerke:+21pp"
+   "rel_staerke:+46pp"
   ],
-  "name": "Sotera Health Company"
+  "name": "Pagaya Technologies Ltd."
  },
  {
   "ticker": "UROY",
@@ -1179,14 +1106,29 @@
   "liste": "spekulativ",
   "score": 65,
   "breakout_level": 4.44,
-  "adr_pct": 6.7,
-  "avg_volume": 3001825.0,
+  "adr_pct": 6.49,
+  "avg_volume": 2970390.0,
   "criteria": [
-   "nahe_ausbruch:-1.6%",
+   "nahe_ausbruch:-0.2%",
    "trend_intakt",
-   "rel_staerke:+24pp"
+   "rel_staerke:+25pp"
   ],
   "name": "Uranium Royalty Corp."
+ },
+ {
+  "ticker": "SHC",
+  "market": "us",
+  "liste": "konservativ",
+  "score": 65,
+  "breakout_level": 19.788,
+  "adr_pct": 2.7,
+  "avg_volume": 2938835.0,
+  "criteria": [
+   "nahe_ausbruch:-1.4%",
+   "trend_intakt",
+   "rel_staerke:+23pp"
+  ],
+  "name": "Sotera Health Company"
  },
  {
   "ticker": "NDAQ",
@@ -1194,44 +1136,59 @@
   "liste": "konservativ",
   "score": 65,
   "breakout_level": 99.35,
-  "adr_pct": 1.95,
-  "avg_volume": 2989770.0,
+  "adr_pct": 1.87,
+  "avg_volume": 2875910.0,
   "criteria": [
    "nahe_ausbruch:-0.6%",
    "trend_intakt",
-   "rel_staerke:+8pp"
+   "rel_staerke:+6pp"
   ],
   "name": "Nasdaq, Inc."
  },
  {
-  "ticker": "WAY",
+  "ticker": "GMAB",
   "market": "us",
-  "liste": "spekulativ",
+  "liste": "konservativ",
   "score": 65,
-  "breakout_level": 25.87,
-  "adr_pct": 4.3,
-  "avg_volume": 2951080.0,
+  "breakout_level": 34.185,
+  "adr_pct": 2.17,
+  "avg_volume": 2855925.0,
   "criteria": [
-   "nahe_ausbruch:-2.0%",
+   "nahe_ausbruch:0.5%",
    "trend_intakt",
-   "rel_staerke:+30pp"
+   "rel_staerke:+29pp"
   ],
-  "name": "Waystar Holding Corp."
+  "name": "Genmab A/S"
  },
  {
-  "ticker": "DOCU",
+  "ticker": "GO",
   "market": "us",
   "liste": "spekulativ",
   "score": 65,
-  "breakout_level": 65.25,
-  "adr_pct": 4.37,
-  "avg_volume": 2916365.0,
+  "breakout_level": 12.06,
+  "adr_pct": 4.41,
+  "avg_volume": 2848615.0,
   "criteria": [
-   "nahe_ausbruch:-4.1%",
+   "nahe_ausbruch:0.5%",
    "trend_intakt",
-   "rel_staerke:+25pp"
+   "rel_staerke:+41pp"
   ],
-  "name": "DocuSign, Inc."
+  "name": "Grocery Outlet Holding Corp."
+ },
+ {
+  "ticker": "CHTR",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 65,
+  "breakout_level": 159.29,
+  "adr_pct": 4.92,
+  "avg_volume": 2826025.0,
+  "criteria": [
+   "nahe_ausbruch:-2.6%",
+   "trend_intakt",
+   "rel_staerke:+6pp"
+  ],
+  "name": "Charter Communications, Inc."
  },
  {
   "ticker": "RPRX",
@@ -1239,164 +1196,134 @@
   "liste": "konservativ",
   "score": 65,
   "breakout_level": 62.13,
-  "adr_pct": 2.37,
-  "avg_volume": 2876150.0,
+  "adr_pct": 2.4,
+  "avg_volume": 2804485.0,
   "criteria": [
-   "nahe_ausbruch:-1.3%",
+   "nahe_ausbruch:-0.1%",
    "trend_intakt",
-   "rel_staerke:+12pp"
+   "rel_staerke:+10pp"
   ],
   "name": "Royalty Pharma plc"
- },
- {
-  "ticker": "TRMB",
-  "market": "us",
-  "liste": "spekulativ",
-  "score": 65,
-  "breakout_level": 62.0,
-  "adr_pct": 3.58,
-  "avg_volume": 2855125.0,
-  "criteria": [
-   "nahe_ausbruch:-2.1%",
-   "trend_intakt",
-   "rel_staerke:+9pp"
-  ],
-  "name": "Trimble Inc."
- },
- {
-  "ticker": "CMPS",
-  "market": "us",
-  "liste": "spekulativ",
-  "score": 65,
-  "breakout_level": 14.59,
-  "adr_pct": 5.71,
-  "avg_volume": 2782885.0,
-  "criteria": [
-   "nahe_ausbruch:-2.7%",
-   "trend_intakt",
-   "rel_staerke:+18pp"
-  ],
-  "name": "COMPASS Pathways Plc"
- },
- {
-  "ticker": "PAYX",
-  "market": "us",
-  "liste": "konservativ",
-  "score": 65,
-  "breakout_level": 125.9,
-  "adr_pct": 2.73,
-  "avg_volume": 2778825.0,
-  "criteria": [
-   "nahe_ausbruch:0.1%",
-   "trend_intakt",
-   "rel_staerke:+32pp"
-  ],
-  "name": "Paychex, Inc."
- },
- {
-  "ticker": "BSY",
-  "market": "us",
-  "liste": "spekulativ",
-  "score": 65,
-  "breakout_level": 37.33,
-  "adr_pct": 4.18,
-  "avg_volume": 2757155.0,
-  "criteria": [
-   "nahe_ausbruch:0.9%",
-   "trend_intakt",
-   "rel_staerke:+16pp"
-  ],
-  "name": "Bentley Systems, Incorporated"
- },
- {
-  "ticker": "AMGN",
-  "market": "us",
-  "liste": "konservativ",
-  "score": 65,
-  "breakout_level": 440.625,
-  "adr_pct": 2.8,
-  "avg_volume": 2750030.0,
-  "criteria": [
-   "nahe_ausbruch:0.7%",
-   "trend_intakt",
-   "rel_staerke:+31pp"
-  ],
-  "name": "Amgen Inc."
  },
  {
   "ticker": "PAA",
   "market": "us",
   "liste": "konservativ",
   "score": 65,
-  "breakout_level": 24.96,
-  "adr_pct": 1.84,
-  "avg_volume": 2715685.0,
+  "breakout_level": 25.1,
+  "adr_pct": 1.82,
+  "avg_volume": 2751320.0,
   "criteria": [
-   "nahe_ausbruch:0.0%",
+   "nahe_ausbruch:-1.6%",
    "trend_intakt",
-   "rel_staerke:+10pp"
+   "rel_staerke:+11pp"
   ],
   "name": "Plains All American Pipeline, L.P."
+ },
+ {
+  "ticker": "AMGN",
+  "market": "us",
+  "liste": "konservativ",
+  "score": 65,
+  "breakout_level": 445.87,
+  "adr_pct": 2.66,
+  "avg_volume": 2684425.0,
+  "criteria": [
+   "nahe_ausbruch:-0.8%",
+   "trend_intakt",
+   "rel_staerke:+31pp"
+  ],
+  "name": "Amgen Inc."
+ },
+ {
+  "ticker": "BSY",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 65,
+  "breakout_level": 37.95,
+  "adr_pct": 4.04,
+  "avg_volume": 2669025.0,
+  "criteria": [
+   "nahe_ausbruch:-2.8%",
+   "trend_intakt",
+   "rel_staerke:+12pp"
+  ],
+  "name": "Bentley Systems, Incorporated"
  },
  {
   "ticker": "EXLS",
   "market": "us",
   "liste": "spekulativ",
   "score": 65,
-  "breakout_level": 38.05,
-  "adr_pct": 3.94,
-  "avg_volume": 2691545.0,
+  "breakout_level": 38.33,
+  "adr_pct": 3.8,
+  "avg_volume": 2611010.0,
   "criteria": [
-   "nahe_ausbruch:-1.0%",
+   "nahe_ausbruch:-2.3%",
    "trend_intakt",
    "rel_staerke:+28pp"
   ],
   "name": "ExlService Holdings, Inc."
  },
  {
-  "ticker": "VERX",
+  "ticker": "PAYX",
+  "market": "us",
+  "liste": "konservativ",
+  "score": 65,
+  "breakout_level": 127.09,
+  "adr_pct": 2.67,
+  "avg_volume": 2610345.0,
+  "criteria": [
+   "nahe_ausbruch:-1.7%",
+   "trend_intakt",
+   "rel_staerke:+29pp"
+  ],
+  "name": "Paychex, Inc."
+ },
+ {
+  "ticker": "SANA",
   "market": "us",
   "liste": "spekulativ",
   "score": 65,
-  "breakout_level": 13.75,
-  "adr_pct": 4.76,
-  "avg_volume": 2632570.0,
+  "breakout_level": 4.12,
+  "adr_pct": 6.41,
+  "avg_volume": 2564315.0,
   "criteria": [
    "nahe_ausbruch:-0.5%",
    "trend_intakt",
-   "rel_staerke:+7pp"
+   "rel_staerke:+23pp"
   ],
-  "name": "Vertex, Inc."
+  "name": "Sana Biotechnology, Inc."
+ },
+ {
+  "ticker": "NTNX",
+  "market": "us",
+  "liste": "konservativ",
+  "score": 65,
+  "breakout_level": 68.88,
+  "adr_pct": 2.97,
+  "avg_volume": 2479550.0,
+  "criteria": [
+   "nahe_ausbruch:-3.5%",
+   "trend_intakt",
+   "rel_staerke:+26pp"
+  ],
+  "name": "Nutanix, Inc."
  },
  {
   "ticker": "ADP",
   "market": "us",
   "liste": "konservativ",
   "score": 65,
-  "breakout_level": 282.17,
-  "adr_pct": 2.62,
-  "avg_volume": 2512940.0,
+  "breakout_level": 285.59,
+  "adr_pct": 2.5,
+  "avg_volume": 2441050.0,
   "criteria": [
-   "nahe_ausbruch:0.3%",
+   "nahe_ausbruch:-1.0%",
    "trend_intakt",
-   "rel_staerke:+29pp"
+   "rel_staerke:+27pp"
   ],
   "name": "Automatic Data Processing, Inc."
- },
- {
-  "ticker": "NTNX",
-  "market": "us",
-  "liste": "spekulativ",
-  "score": 65,
-  "breakout_level": 68.8,
-  "adr_pct": 3.09,
-  "avg_volume": 2505380.0,
-  "criteria": [
-   "nahe_ausbruch:-3.1%",
-   "trend_intakt",
-   "rel_staerke:+35pp"
-  ],
-  "name": "Nutanix, Inc."
  },
  {
   "ticker": "OMER",
@@ -1404,29 +1331,14 @@
   "liste": "spekulativ",
   "score": 65,
   "breakout_level": 19.58,
-  "adr_pct": 5.34,
-  "avg_volume": 2467480.0,
+  "adr_pct": 5.16,
+  "avg_volume": 2422120.0,
   "criteria": [
-   "nahe_ausbruch:-1.3%",
+   "nahe_ausbruch:-1.5%",
    "trend_intakt",
-   "rel_staerke:+72pp"
+   "rel_staerke:+73pp"
   ],
   "name": "Omeros Corporation"
- },
- {
-  "ticker": "HALO",
-  "market": "us",
-  "liste": "spekulativ",
-  "score": 65,
-  "breakout_level": 108.49,
-  "adr_pct": 3.15,
-  "avg_volume": 2457240.0,
-  "criteria": [
-   "nahe_ausbruch:0.1%",
-   "trend_intakt",
-   "rel_staerke:+58pp"
-  ],
-  "name": "Halozyme Therapeutics, Inc."
  },
  {
   "ticker": "ADPT",
@@ -1435,13 +1347,148 @@
   "score": 65,
   "breakout_level": 26.16,
   "adr_pct": 5.11,
-  "avg_volume": 2442090.0,
+  "avg_volume": 2419205.0,
   "criteria": [
-   "nahe_ausbruch:-2.3%",
+   "nahe_ausbruch:0.3%",
    "trend_intakt",
-   "rel_staerke:+67pp"
+   "rel_staerke:+72pp"
   ],
   "name": "Adaptive Biotechnologies Corporation"
+ },
+ {
+  "ticker": "HALO",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 65,
+  "breakout_level": 109.1,
+  "adr_pct": 3.12,
+  "avg_volume": 2405960.0,
+  "criteria": [
+   "nahe_ausbruch:0.2%",
+   "trend_intakt",
+   "rel_staerke:+63pp"
+  ],
+  "name": "Halozyme Therapeutics, Inc."
+ },
+ {
+  "ticker": "IRWD",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 65,
+  "breakout_level": 4.59,
+  "adr_pct": 6.46,
+  "avg_volume": 2281590.0,
+  "criteria": [
+   "nahe_ausbruch:-4.4%",
+   "trend_intakt",
+   "rel_staerke:+22pp"
+  ],
+  "name": "Ironwood Pharmaceuticals, Inc."
+ },
+ {
+  "ticker": "NEO",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 65,
+  "breakout_level": 17.08,
+  "adr_pct": 4.23,
+  "avg_volume": 2271050.0,
+  "criteria": [
+   "nahe_ausbruch:-1.7%",
+   "trend_intakt",
+   "rel_staerke:+58pp"
+  ],
+  "name": "NeoGenomics, Inc."
+ },
+ {
+  "ticker": "AMPL",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 65,
+  "breakout_level": 13.58,
+  "adr_pct": 5.19,
+  "avg_volume": 2265745.0,
+  "criteria": [
+   "nahe_ausbruch:-3.5%",
+   "trend_intakt",
+   "rel_staerke:+66pp"
+  ],
+  "name": "Amplitude, Inc."
+ },
+ {
+  "ticker": "NCNO",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 65,
+  "breakout_level": 21.22,
+  "adr_pct": 3.61,
+  "avg_volume": 2244755.0,
+  "criteria": [
+   "nahe_ausbruch:-1.9%",
+   "trend_intakt",
+   "rel_staerke:+28pp"
+  ],
+  "name": "nCino, Inc."
+ },
+ {
+  "ticker": "OABI",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 65,
+  "breakout_level": 4.71,
+  "adr_pct": 8.39,
+  "avg_volume": 2123100.0,
+  "criteria": [
+   "nahe_ausbruch:-1.1%",
+   "trend_intakt",
+   "rel_staerke:+71pp"
+  ],
+  "name": "OmniAb, Inc."
+ },
+ {
+  "ticker": "RLAY",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 65,
+  "breakout_level": 21.27,
+  "adr_pct": 4.87,
+  "avg_volume": 2119715.0,
+  "criteria": [
+   "nahe_ausbruch:-3.3%",
+   "trend_intakt",
+   "rel_staerke:+45pp"
+  ],
+  "name": "Relay Therapeutics, Inc."
+ },
+ {
+  "ticker": "FLYW",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 65,
+  "breakout_level": 19.73,
+  "adr_pct": 3.71,
+  "avg_volume": 2112550.0,
+  "criteria": [
+   "nahe_ausbruch:-2.6%",
+   "trend_intakt",
+   "rel_staerke:+18pp"
+  ],
+  "name": "Flywire Corporation"
+ },
+ {
+  "ticker": "FWONK",
+  "market": "us",
+  "liste": "konservativ",
+  "score": 65,
+  "breakout_level": 107.31,
+  "adr_pct": 2.51,
+  "avg_volume": 2089110.0,
+  "criteria": [
+   "nahe_ausbruch:-2.6%",
+   "trend_intakt",
+   "rel_staerke:+14pp"
+  ],
+  "name": "Liberty Media Corporation"
  },
  {
   "ticker": "CCEP",
@@ -1449,72 +1496,42 @@
   "liste": "konservativ",
   "score": 65,
   "breakout_level": 113.67,
-  "adr_pct": 1.84,
-  "avg_volume": 2045995.0,
+  "adr_pct": 1.73,
+  "avg_volume": 1982080.0,
   "criteria": [
-   "nahe_ausbruch:-3.1%",
+   "nahe_ausbruch:-3.4%",
    "trend_intakt",
-   "rel_staerke:+18pp"
+   "rel_staerke:+20pp"
   ],
   "name": "Coca-Cola Europacific Partners plc"
  },
  {
-  "ticker": "HAS",
+  "ticker": "DLTR",
   "market": "us",
   "liste": "konservativ",
   "score": 65,
-  "breakout_level": 97.3396,
-  "adr_pct": 2.54,
-  "avg_volume": 1797035.0,
+  "breakout_level": 137.07,
+  "adr_pct": 2.57,
+  "avg_volume": 1934040.0,
   "criteria": [
-   "nahe_ausbruch:-2.0%",
+   "nahe_ausbruch:-1.9%",
    "trend_intakt",
-   "rel_staerke:+11pp"
+   "rel_staerke:+14pp"
   ],
-  "name": "Hasbro, Inc."
- },
- {
-  "ticker": "COO",
-  "market": "us",
-  "liste": "konservativ",
-  "score": 65,
-  "breakout_level": 78.11,
-  "adr_pct": 1.92,
-  "avg_volume": 1774545.0,
-  "criteria": [
-   "nahe_ausbruch:-3.0%",
-   "trend_intakt",
-   "rel_staerke:+23pp"
-  ],
-  "name": "The Cooper Companies, Inc."
- },
- {
-  "ticker": "SSNC",
-  "market": "us",
-  "liste": "konservativ",
-  "score": 65,
-  "breakout_level": 83.24,
-  "adr_pct": 2.3,
-  "avg_volume": 1745620.0,
-  "criteria": [
-   "nahe_ausbruch:0.4%",
-   "trend_intakt",
-   "rel_staerke:+26pp"
-  ],
-  "name": "SS&C Technologies Holdings, Inc."
+  "name": "Dollar Tree, Inc."
  },
  {
   "ticker": "PAGP",
   "market": "us",
   "liste": "konservativ",
   "score": 65,
-  "breakout_level": 27.17,
-  "adr_pct": 1.68,
-  "avg_volume": 1723705.0,
+  "breakout_level": 27.4,
+  "adr_pct": 1.67,
+  "avg_volume": 1737280.0,
   "criteria": [
-   "nahe_ausbruch:0.4%",
+   "nahe_ausbruch:-0.9%",
    "trend_intakt",
-   "rel_staerke:+11pp"
+   "rel_staerke:+12pp"
   ],
   "name": "Plains GP Holdings, L.P."
  },
@@ -1523,15 +1540,45 @@
   "market": "us",
   "liste": "konservativ",
   "score": 65,
-  "breakout_level": 108.755,
-  "adr_pct": 2.83,
-  "avg_volume": 1710985.0,
+  "breakout_level": 108.825,
+  "adr_pct": 2.73,
+  "avg_volume": 1708600.0,
   "criteria": [
-   "nahe_ausbruch:-0.3%",
+   "nahe_ausbruch:-1.0%",
    "trend_intakt",
-   "rel_staerke:+8pp"
+   "rel_staerke:+6pp"
   ],
   "name": "Tradeweb Markets Inc."
+ },
+ {
+  "ticker": "SSNC",
+  "market": "us",
+  "liste": "konservativ",
+  "score": 65,
+  "breakout_level": 84.21,
+  "adr_pct": 2.23,
+  "avg_volume": 1671585.0,
+  "criteria": [
+   "nahe_ausbruch:-1.4%",
+   "trend_intakt",
+   "rel_staerke:+22pp"
+  ],
+  "name": "SS&C Technologies Holdings, Inc."
+ },
+ {
+  "ticker": "HAS",
+  "market": "us",
+  "liste": "konservativ",
+  "score": 65,
+  "breakout_level": 97.3396,
+  "adr_pct": 2.42,
+  "avg_volume": 1667040.0,
+  "criteria": [
+   "nahe_ausbruch:-0.6%",
+   "trend_intakt",
+   "rel_staerke:+13pp"
+  ],
+  "name": "Hasbro, Inc."
  },
  {
   "ticker": "HTHT",
@@ -1539,14 +1586,29 @@
   "liste": "konservativ",
   "score": 65,
   "breakout_level": 49.77,
-  "adr_pct": 2.7,
-  "avg_volume": 1646105.0,
+  "adr_pct": 2.65,
+  "avg_volume": 1654085.0,
   "criteria": [
-   "nahe_ausbruch:-2.3%",
+   "nahe_ausbruch:-0.6%",
    "trend_intakt",
-   "rel_staerke:+8pp"
+   "rel_staerke:+9pp"
   ],
   "name": "H World Group Limited"
+ },
+ {
+  "ticker": "INCY",
+  "market": "us",
+  "liste": "konservativ",
+  "score": 65,
+  "breakout_level": 132.6,
+  "adr_pct": 2.84,
+  "avg_volume": 1552530.0,
+  "criteria": [
+   "nahe_ausbruch:-2.2%",
+   "trend_intakt",
+   "rel_staerke:+33pp"
+  ],
+  "name": "Incyte Corporation"
  },
  {
   "ticker": "VREX",
@@ -1554,12 +1616,12 @@
   "liste": "konservativ",
   "score": 65,
   "breakout_level": 18.63,
-  "adr_pct": 1.99,
-  "avg_volume": 1443615.0,
+  "adr_pct": 1.83,
+  "avg_volume": 1454890.0,
   "criteria": [
-   "nahe_ausbruch:-0.6%",
+   "nahe_ausbruch:-0.7%",
    "trend_intakt",
-   "rel_staerke:+75pp"
+   "rel_staerke:+80pp"
   ],
   "name": "Varex Imaging Corporation"
  },
@@ -1570,11 +1632,11 @@
   "score": 65,
   "breakout_level": 555.32,
   "adr_pct": 2.76,
-  "avg_volume": 1301170.0,
+  "avg_volume": 1254920.0,
   "criteria": [
-   "nahe_ausbruch:-1.4%",
+   "nahe_ausbruch:-0.4%",
    "trend_intakt",
-   "rel_staerke:+21pp"
+   "rel_staerke:+22pp"
   ],
   "name": "Vertex Pharmaceuticals Incorporated"
  },
@@ -1584,10 +1646,10 @@
   "liste": "konservativ",
   "score": 65,
   "breakout_level": 92.18,
-  "adr_pct": 2.33,
-  "avg_volume": 1277150.0,
+  "adr_pct": 2.27,
+  "avg_volume": 1247535.0,
   "criteria": [
-   "nahe_ausbruch:-2.9%",
+   "nahe_ausbruch:-2.7%",
    "trend_intakt",
    "rel_staerke:+16pp"
   ],
@@ -1599,134 +1661,29 @@
   "liste": "konservativ",
   "score": 65,
   "breakout_level": 92.26,
-  "adr_pct": 2.81,
-  "avg_volume": 1163940.0,
+  "adr_pct": 2.77,
+  "avg_volume": 1157510.0,
   "criteria": [
-   "nahe_ausbruch:-2.1%",
+   "nahe_ausbruch:-1.3%",
    "trend_intakt",
-   "rel_staerke:+40pp"
+   "rel_staerke:+43pp"
   ],
   "name": "Merit Medical Systems, Inc."
  },
  {
-  "ticker": "NWS",
-  "market": "us",
-  "liste": "konservativ",
-  "score": 65,
-  "breakout_level": 35.31,
-  "adr_pct": 2.77,
-  "avg_volume": 1130415.0,
-  "criteria": [
-   "nahe_ausbruch:-0.7%",
-   "trend_intakt",
-   "rel_staerke:+14pp"
-  ],
-  "name": "News Corporation"
- },
- {
-  "ticker": "NTRS",
-  "market": "us",
-  "liste": "konservativ",
-  "score": 65,
-  "breakout_level": 195.78,
-  "adr_pct": 2.0,
-  "avg_volume": 1053095.0,
-  "criteria": [
-   "nahe_ausbruch:-4.7%",
-   "trend_intakt",
-   "rel_staerke:+10pp"
-  ],
-  "name": "Northern Trust Corporation"
- },
- {
-  "ticker": "BIIB",
-  "market": "us",
-  "liste": "konservativ",
-  "score": 65,
-  "breakout_level": 222.15,
-  "adr_pct": 2.87,
-  "avg_volume": 958265.0,
-  "criteria": [
-   "nahe_ausbruch:-1.8%",
-   "trend_intakt",
-   "rel_staerke:+10pp"
-  ],
-  "name": "Biogen Inc."
- },
- {
-  "ticker": "ADAM",
-  "market": "us",
-  "liste": "konservativ",
-  "score": 65,
-  "breakout_level": 10.36,
-  "adr_pct": 2.58,
-  "avg_volume": 952850.0,
-  "criteria": [
-   "nahe_ausbruch:-4.8%",
-   "trend_intakt",
-   "rel_staerke:+9pp"
-  ],
-  "name": "Adamas Trust, Inc."
- },
- {
-  "ticker": "TRI",
+  "ticker": "ILMN",
   "market": "us",
   "liste": "spekulativ",
   "score": 65,
-  "breakout_level": 112.7234,
-  "adr_pct": 5.01,
-  "avg_volume": 2354380.0,
+  "breakout_level": 223.97,
+  "adr_pct": 4.36,
+  "avg_volume": 2107815.0,
   "criteria": [
-   "nahe_ausbruch:-3.6%",
+   "nahe_ausbruch:0.5%",
    "trend_intakt",
-   "rel_staerke:+28pp"
+   "rel_staerke:+37pp"
   ],
-  "name": "Thomson Reuters Corp"
- },
- {
-  "ticker": "NEO",
-  "market": "us",
-  "liste": "spekulativ",
-  "score": 65,
-  "breakout_level": 17.08,
-  "adr_pct": 4.29,
-  "avg_volume": 2347575.0,
-  "criteria": [
-   "nahe_ausbruch:-3.9%",
-   "trend_intakt",
-   "rel_staerke:+60pp"
-  ],
-  "name": "NeoGenomics, Inc."
- },
- {
-  "ticker": "AMPL",
-  "market": "us",
-  "liste": "spekulativ",
-  "score": 65,
-  "breakout_level": 13.58,
-  "adr_pct": 5.31,
-  "avg_volume": 2291320.0,
-  "criteria": [
-   "nahe_ausbruch:-3.2%",
-   "trend_intakt",
-   "rel_staerke:+90pp"
-  ],
-  "name": "Amplitude, Inc."
- },
- {
-  "ticker": "NCNO",
-  "market": "us",
-  "liste": "spekulativ",
-  "score": 65,
-  "breakout_level": 21.22,
-  "adr_pct": 3.7,
-  "avg_volume": 2214175.0,
-  "criteria": [
-   "nahe_ausbruch:-1.3%",
-   "trend_intakt",
-   "rel_staerke:+31pp"
-  ],
-  "name": "nCino, Inc."
+  "name": "Illumina, Inc."
  },
  {
   "ticker": "NAVN",
@@ -1734,44 +1691,14 @@
   "liste": "spekulativ",
   "score": 65,
   "breakout_level": 29.99,
-  "adr_pct": 4.06,
-  "avg_volume": 2145695.0,
+  "adr_pct": 3.83,
+  "avg_volume": 2098040.0,
   "criteria": [
-   "nahe_ausbruch:-2.1%",
+   "nahe_ausbruch:-2.3%",
    "trend_intakt",
-   "rel_staerke:+43pp"
+   "rel_staerke:+36pp"
   ],
   "name": "Navan, Inc."
- },
- {
-  "ticker": "FLYW",
-  "market": "us",
-  "liste": "spekulativ",
-  "score": 65,
-  "breakout_level": 19.59,
-  "adr_pct": 3.81,
-  "avg_volume": 2100615.0,
-  "criteria": [
-   "nahe_ausbruch:-0.9%",
-   "trend_intakt",
-   "rel_staerke:+21pp"
-  ],
-  "name": "Flywire Corporation"
- },
- {
-  "ticker": "GDYN",
-  "market": "us",
-  "liste": "spekulativ",
-  "score": 65,
-  "breakout_level": 8.24,
-  "adr_pct": 5.73,
-  "avg_volume": 2083520.0,
-  "criteria": [
-   "nahe_ausbruch:-4.6%",
-   "trend_intakt",
-   "rel_staerke:+5pp"
-  ],
-  "name": "Grid Dynamics Holdings, Inc."
  },
  {
   "ticker": "CAKE",
@@ -1779,42 +1706,72 @@
   "liste": "spekulativ",
   "score": 65,
   "breakout_level": 118.46,
-  "adr_pct": 4.05,
-  "avg_volume": 2073480.0,
+  "adr_pct": 3.99,
+  "avg_volume": 2094535.0,
   "criteria": [
-   "nahe_ausbruch:-3.3%",
+   "nahe_ausbruch:-4.2%",
    "trend_intakt",
-   "rel_staerke:+78pp"
+   "rel_staerke:+71pp"
   ],
   "name": "The Cheesecake Factory Incorporated"
  },
  {
-  "ticker": "AVPT",
+  "ticker": "GDYN",
   "market": "us",
   "liste": "spekulativ",
   "score": 65,
-  "breakout_level": 13.82,
-  "adr_pct": 3.37,
-  "avg_volume": 1981420.0,
+  "breakout_level": 8.24,
+  "adr_pct": 5.67,
+  "avg_volume": 2048415.0,
   "criteria": [
-   "nahe_ausbruch:-4.2%",
+   "nahe_ausbruch:-4.5%",
    "trend_intakt",
-   "rel_staerke:+28pp"
+   "rel_staerke:+8pp"
   ],
-  "name": "AvePoint, Inc."
+  "name": "Grid Dynamics Holdings, Inc."
+ },
+ {
+  "ticker": "HTFL",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 65,
+  "breakout_level": 50.85,
+  "adr_pct": 5.91,
+  "avg_volume": 2015110.0,
+  "criteria": [
+   "nahe_ausbruch:-1.9%",
+   "trend_intakt",
+   "rel_staerke:+60pp"
+  ],
+  "name": "Heartflow, Inc."
+ },
+ {
+  "ticker": "ACRS",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 65,
+  "breakout_level": 6.515,
+  "adr_pct": 5.92,
+  "avg_volume": 1956070.0,
+  "criteria": [
+   "nahe_ausbruch:0.3%",
+   "trend_intakt",
+   "rel_staerke:+42pp"
+  ],
+  "name": "Aclaris Therapeutics, Inc."
  },
  {
   "ticker": "ACB",
   "market": "us",
   "liste": "spekulativ",
   "score": 65,
-  "breakout_level": 3.96,
-  "adr_pct": 4.74,
-  "avg_volume": 1927430.0,
+  "breakout_level": 4.055,
+  "adr_pct": 4.8,
+  "avg_volume": 1940845.0,
   "criteria": [
-   "nahe_ausbruch:-0.5%",
+   "nahe_ausbruch:-1.1%",
    "trend_intakt",
-   "rel_staerke:+6pp"
+   "rel_staerke:+10pp"
   ],
   "name": "Aurora Cannabis Inc."
  },
@@ -1823,60 +1780,15 @@
   "market": "us",
   "liste": "spekulativ",
   "score": 65,
-  "breakout_level": 84.18,
-  "adr_pct": 7.04,
-  "avg_volume": 1917265.0,
+  "breakout_level": 85.88,
+  "adr_pct": 7.01,
+  "avg_volume": 1871390.0,
   "criteria": [
-   "nahe_ausbruch:0.3%",
+   "nahe_ausbruch:0.2%",
    "trend_intakt",
-   "rel_staerke:+59pp"
+   "rel_staerke:+52pp"
   ],
   "name": "Wix.com Ltd."
- },
- {
-  "ticker": "DYN",
-  "market": "us",
-  "liste": "spekulativ",
-  "score": 65,
-  "breakout_level": 27.305,
-  "adr_pct": 4.16,
-  "avg_volume": 1878230.0,
-  "criteria": [
-   "nahe_ausbruch:-4.8%",
-   "trend_intakt",
-   "rel_staerke:+39pp"
-  ],
-  "name": "Dyne Therapeutics, Inc."
- },
- {
-  "ticker": "ACRS",
-  "market": "us",
-  "liste": "spekulativ",
-  "score": 65,
-  "breakout_level": 6.515,
-  "adr_pct": 5.75,
-  "avg_volume": 1866060.0,
-  "criteria": [
-   "nahe_ausbruch:-3.1%",
-   "trend_intakt",
-   "rel_staerke:+37pp"
-  ],
-  "name": "Aclaris Therapeutics, Inc."
- },
- {
-  "ticker": "HELP",
-  "market": "us",
-  "liste": "spekulativ",
-  "score": 65,
-  "breakout_level": 12.95,
-  "adr_pct": 7.31,
-  "avg_volume": 1846580.0,
-  "criteria": [
-   "nahe_ausbruch:0.5%",
-   "trend_intakt",
-   "rel_staerke:+189pp"
-  ],
-  "name": "Cybin Inc."
  },
  {
   "ticker": "ACAD",
@@ -1884,44 +1796,44 @@
   "liste": "spekulativ",
   "score": 65,
   "breakout_level": 30.96,
-  "adr_pct": 3.31,
-  "avg_volume": 1805745.0,
+  "adr_pct": 3.35,
+  "avg_volume": 1834880.0,
   "criteria": [
-   "nahe_ausbruch:-4.2%",
+   "nahe_ausbruch:-1.3%",
    "trend_intakt",
-   "rel_staerke:+36pp"
+   "rel_staerke:+40pp"
   ],
   "name": "ACADIA Pharmaceuticals Inc."
  },
  {
-  "ticker": "TWST",
+  "ticker": "DYN",
   "market": "us",
   "liste": "spekulativ",
   "score": 65,
-  "breakout_level": 145.93,
-  "adr_pct": 7.42,
-  "avg_volume": 1803735.0,
+  "breakout_level": 27.305,
+  "adr_pct": 4.09,
+  "avg_volume": 1834470.0,
   "criteria": [
    "nahe_ausbruch:-3.5%",
    "trend_intakt",
-   "rel_staerke:+103pp"
+   "rel_staerke:+35pp"
   ],
-  "name": "Twist Bioscience Corporation"
+  "name": "Dyne Therapeutics, Inc."
  },
  {
-  "ticker": "INCY",
+  "ticker": "ADSK",
   "market": "us",
   "liste": "spekulativ",
   "score": 65,
-  "breakout_level": 132.6,
-  "adr_pct": 3.25,
-  "avg_volume": 1790465.0,
+  "breakout_level": 260.74,
+  "adr_pct": 3.34,
+  "avg_volume": 1783975.0,
   "criteria": [
-   "nahe_ausbruch:-3.5%",
+   "nahe_ausbruch:-3.7%",
    "trend_intakt",
-   "rel_staerke:+30pp"
+   "rel_staerke:+7pp"
   ],
-  "name": "Incyte Corporation"
+  "name": "Autodesk, Inc."
  },
  {
   "ticker": "VRDN",
@@ -1929,29 +1841,14 @@
   "liste": "spekulativ",
   "score": 65,
   "breakout_level": 24.86,
-  "adr_pct": 4.39,
-  "avg_volume": 1783605.0,
+  "adr_pct": 4.32,
+  "avg_volume": 1773635.0,
   "criteria": [
-   "nahe_ausbruch:-3.4%",
+   "nahe_ausbruch:-2.7%",
    "trend_intakt",
    "rel_staerke:+36pp"
   ],
   "name": "Viridian Therapeutics, Inc."
- },
- {
-  "ticker": "PRCH",
-  "market": "us",
-  "liste": "spekulativ",
-  "score": 65,
-  "breakout_level": 17.47,
-  "adr_pct": 5.75,
-  "avg_volume": 1778370.0,
-  "criteria": [
-   "nahe_ausbruch:-2.3%",
-   "trend_intakt",
-   "rel_staerke:+64pp"
-  ],
-  "name": "Porch Group, Inc."
  },
  {
   "ticker": "PPC",
@@ -1959,12 +1856,12 @@
   "liste": "spekulativ",
   "score": 65,
   "breakout_level": 32.85,
-  "adr_pct": 4.25,
-  "avg_volume": 1757585.0,
+  "adr_pct": 4.3,
+  "avg_volume": 1760855.0,
   "criteria": [
-   "nahe_ausbruch:-3.2%",
+   "nahe_ausbruch:-1.3%",
    "trend_intakt",
-   "rel_staerke:+10pp"
+   "rel_staerke:+13pp"
   ],
   "name": "Pilgrim's Pride Corporation"
  },
@@ -1974,29 +1871,29 @@
   "liste": "spekulativ",
   "score": 65,
   "breakout_level": 9.02,
-  "adr_pct": 3.98,
-  "avg_volume": 1728475.0,
+  "adr_pct": 4.02,
+  "avg_volume": 1738200.0,
   "criteria": [
    "nahe_ausbruch:-3.1%",
    "trend_intakt",
-   "rel_staerke:+37pp"
+   "rel_staerke:+41pp"
   ],
   "name": "Xeris Biopharma Holdings, Inc."
  },
  {
-  "ticker": "RVMD",
+  "ticker": "PRCH",
   "market": "us",
   "liste": "spekulativ",
   "score": 65,
-  "breakout_level": 220.34,
-  "adr_pct": 3.65,
-  "avg_volume": 1710995.0,
+  "breakout_level": 17.59,
+  "adr_pct": 5.56,
+  "avg_volume": 1733130.0,
   "criteria": [
-   "nahe_ausbruch:-4.0%",
+   "nahe_ausbruch:-0.8%",
    "trend_intakt",
-   "rel_staerke:+36pp"
+   "rel_staerke:+66pp"
   ],
-  "name": "Revolution Medicines, Inc."
+  "name": "Porch Group, Inc."
  },
  {
   "ticker": "TVTX",
@@ -2004,12 +1901,12 @@
   "liste": "spekulativ",
   "score": 65,
   "breakout_level": 66.38,
-  "adr_pct": 4.05,
-  "avg_volume": 1702075.0,
+  "adr_pct": 3.97,
+  "avg_volume": 1721565.0,
   "criteria": [
-   "nahe_ausbruch:-1.7%",
+   "nahe_ausbruch:0.9%",
    "trend_intakt",
-   "rel_staerke:+35pp"
+   "rel_staerke:+41pp"
   ],
   "name": "Travere Therapeutics, Inc."
  },
@@ -2019,14 +1916,44 @@
   "liste": "spekulativ",
   "score": 65,
   "breakout_level": 120.33,
-  "adr_pct": 3.41,
-  "avg_volume": 1657645.0,
+  "adr_pct": 3.46,
+  "avg_volume": 1691630.0,
   "criteria": [
-   "volumen_aufbau:3.9x",
+   "volumen_aufbau:4.0x",
    "trend_intakt",
-   "rel_staerke:+20pp"
+   "rel_staerke:+18pp"
   ],
   "name": "BioNTech SE"
+ },
+ {
+  "ticker": "RVMD",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 65,
+  "breakout_level": 220.34,
+  "adr_pct": 3.62,
+  "avg_volume": 1659790.0,
+  "criteria": [
+   "nahe_ausbruch:-4.1%",
+   "trend_intakt",
+   "rel_staerke:+33pp"
+  ],
+  "name": "Revolution Medicines, Inc."
+ },
+ {
+  "ticker": "EXPE",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 65,
+  "breakout_level": 341.09,
+  "adr_pct": 3.99,
+  "avg_volume": 1629565.0,
+  "criteria": [
+   "nahe_ausbruch:-0.9%",
+   "trend_intakt",
+   "rel_staerke:+48pp"
+  ],
+  "name": "Expedia Group, Inc."
  },
  {
   "ticker": "SBLK",
@@ -2034,12 +1961,12 @@
   "liste": "spekulativ",
   "score": 65,
   "breakout_level": 31.0,
-  "adr_pct": 3.24,
-  "avg_volume": 1562020.0,
+  "adr_pct": 3.18,
+  "avg_volume": 1568995.0,
   "criteria": [
-   "nahe_ausbruch:-1.0%",
+   "nahe_ausbruch:0.4%",
    "trend_intakt",
-   "rel_staerke:+17pp"
+   "rel_staerke:+19pp"
   ],
   "name": "Star Bulk Carriers Corp."
  },
@@ -2049,74 +1976,29 @@
   "liste": "spekulativ",
   "score": 65,
   "breakout_level": 95.46,
-  "adr_pct": 5.94,
-  "avg_volume": 1560320.0,
+  "adr_pct": 5.81,
+  "avg_volume": 1565445.0,
   "criteria": [
-   "nahe_ausbruch:-1.3%",
+   "nahe_ausbruch:-2.3%",
    "trend_intakt",
-   "rel_staerke:+20pp"
+   "rel_staerke:+10pp"
   ],
   "name": "monday.com Ltd."
  },
  {
-  "ticker": "OMDA",
+  "ticker": "MDXG",
   "market": "us",
   "liste": "spekulativ",
   "score": 65,
-  "breakout_level": 25.17,
-  "adr_pct": 5.19,
-  "avg_volume": 1538150.0,
+  "breakout_level": 4.5,
+  "adr_pct": 4.37,
+  "avg_volume": 1536790.0,
   "criteria": [
-   "nahe_ausbruch:-4.3%",
+   "nahe_ausbruch:-3.6%",
    "trend_intakt",
-   "rel_staerke:+34pp"
+   "rel_staerke:+17pp"
   ],
-  "name": "Omada Health, Inc."
- },
- {
-  "ticker": "IMMX",
-  "market": "us",
-  "liste": "spekulativ",
-  "score": 65,
-  "breakout_level": 13.76,
-  "adr_pct": 7.13,
-  "avg_volume": 1507325.0,
-  "criteria": [
-   "nahe_ausbruch:-1.1%",
-   "trend_intakt",
-   "rel_staerke:+53pp"
-  ],
-  "name": "Immix Biopharma, Inc."
- },
- {
-  "ticker": "BBNX",
-  "market": "us",
-  "liste": "spekulativ",
-  "score": 65,
-  "breakout_level": 20.735,
-  "adr_pct": 8.03,
-  "avg_volume": 1497475.0,
-  "criteria": [
-   "nahe_ausbruch:-4.8%",
-   "trend_intakt",
-   "rel_staerke:+62pp"
-  ],
-  "name": "Beta Bionics, Inc."
- },
- {
-  "ticker": "NMRK",
-  "market": "us",
-  "liste": "spekulativ",
-  "score": 65,
-  "breakout_level": 16.45,
-  "adr_pct": 3.7,
-  "avg_volume": 1484215.0,
-  "criteria": [
-   "nahe_ausbruch:-2.3%",
-   "trend_intakt",
-   "rel_staerke:+12pp"
-  ],
-  "name": "Newmark Group, Inc."
+  "name": "MiMedx Group, Inc"
  },
  {
   "ticker": "NTRA",
@@ -2124,29 +2006,59 @@
   "liste": "spekulativ",
   "score": 65,
   "breakout_level": 333.56,
-  "adr_pct": 3.86,
-  "avg_volume": 1475105.0,
+  "adr_pct": 3.85,
+  "avg_volume": 1510505.0,
   "criteria": [
-   "nahe_ausbruch:-1.8%",
+   "nahe_ausbruch:0.9%",
    "trend_intakt",
-   "rel_staerke:+52pp"
+   "rel_staerke:+49pp"
   ],
   "name": "Natera, Inc."
  },
  {
-  "ticker": "DUOL",
+  "ticker": "NMRK",
   "market": "us",
   "liste": "spekulativ",
   "score": 65,
-  "breakout_level": 151.0,
-  "adr_pct": 5.92,
-  "avg_volume": 1433725.0,
+  "breakout_level": 16.45,
+  "adr_pct": 3.73,
+  "avg_volume": 1487775.0,
   "criteria": [
-   "nahe_ausbruch:-2.8%",
+   "nahe_ausbruch:-2.7%",
    "trend_intakt",
-   "rel_staerke:+34pp"
+   "rel_staerke:+14pp"
   ],
-  "name": "Duolingo, Inc."
+  "name": "Newmark Group, Inc."
+ },
+ {
+  "ticker": "FRPT",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 65,
+  "breakout_level": 77.13,
+  "adr_pct": 4.28,
+  "avg_volume": 1485310.0,
+  "criteria": [
+   "nahe_ausbruch:-2.2%",
+   "trend_intakt",
+   "rel_staerke:+45pp"
+  ],
+  "name": "Freshpet, Inc."
+ },
+ {
+  "ticker": "OMDA",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 65,
+  "breakout_level": 25.17,
+  "adr_pct": 4.98,
+  "avg_volume": 1460920.0,
+  "criteria": [
+   "nahe_ausbruch:-4.9%",
+   "trend_intakt",
+   "rel_staerke:+32pp"
+  ],
+  "name": "Omada Health, Inc."
  },
  {
   "ticker": "PTC",
@@ -2154,14 +2066,44 @@
   "liste": "spekulativ",
   "score": 65,
   "breakout_level": 156.03,
-  "adr_pct": 3.67,
-  "avg_volume": 1433500.0,
+  "adr_pct": 3.64,
+  "avg_volume": 1440085.0,
   "criteria": [
-   "nahe_ausbruch:-1.1%",
+   "nahe_ausbruch:-3.1%",
    "trend_intakt",
-   "rel_staerke:+10pp"
+   "rel_staerke:+8pp"
   ],
   "name": "PTC Inc."
+ },
+ {
+  "ticker": "LILAK",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 65,
+  "breakout_level": 8.839,
+  "adr_pct": 3.57,
+  "avg_volume": 1419020.0,
+  "criteria": [
+   "nahe_ausbruch:-3.3%",
+   "trend_intakt",
+   "rel_staerke:+52pp"
+  ],
+  "name": "Liberty Latin America Ltd."
+ },
+ {
+  "ticker": "DUOL",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 65,
+  "breakout_level": 151.0,
+  "adr_pct": 5.8,
+  "avg_volume": 1396860.0,
+  "criteria": [
+   "nahe_ausbruch:-3.3%",
+   "trend_intakt",
+   "rel_staerke:+30pp"
+  ],
+  "name": "Duolingo, Inc."
  },
  {
   "ticker": "ALKT",
@@ -2170,11 +2112,11 @@
   "score": 65,
   "breakout_level": 21.05,
   "adr_pct": 3.78,
-  "avg_volume": 1413395.0,
+  "avg_volume": 1376525.0,
   "criteria": [
-   "nahe_ausbruch:-3.5%",
+   "nahe_ausbruch:-4.4%",
    "trend_intakt",
-   "rel_staerke:+14pp"
+   "rel_staerke:+10pp"
   ],
   "name": "Alkami Technology, Inc."
  },
@@ -2184,88 +2126,148 @@
   "liste": "spekulativ",
   "score": 65,
   "breakout_level": 7.04,
-  "adr_pct": 6.79,
-  "avg_volume": 1395435.0,
+  "adr_pct": 6.72,
+  "avg_volume": 1370680.0,
   "criteria": [
-   "nahe_ausbruch:-2.4%",
+   "nahe_ausbruch:-4.4%",
    "trend_intakt",
-   "rel_staerke:+24pp"
+   "rel_staerke:+17pp"
   ],
   "name": "Funko, Inc."
  },
  {
-  "ticker": "FUTU",
+  "ticker": "CADL",
   "market": "us",
   "liste": "spekulativ",
   "score": 65,
-  "breakout_level": 124.48,
-  "adr_pct": 3.62,
-  "avg_volume": 1360175.0,
+  "breakout_level": 13.82,
+  "adr_pct": 5.98,
+  "avg_volume": 1292140.0,
   "criteria": [
-   "volumen_aufbau:2.1x",
+   "nahe_ausbruch:-1.6%",
    "trend_intakt",
-   "rel_staerke:+9pp"
+   "rel_staerke:+63pp"
   ],
-  "name": "Futu Holdings Limited"
+  "name": "Candel Therapeutics, Inc."
  },
  {
-  "ticker": "EWTX",
+  "ticker": "DNLI",
   "market": "us",
   "liste": "spekulativ",
   "score": 65,
-  "breakout_level": 46.59,
-  "adr_pct": 5.18,
-  "avg_volume": 1358260.0,
+  "breakout_level": 25.74,
+  "adr_pct": 3.65,
+  "avg_volume": 1291420.0,
   "criteria": [
-   "nahe_ausbruch:-4.0%",
+   "nahe_ausbruch:-3.1%",
    "trend_intakt",
-   "rel_staerke:+33pp"
+   "rel_staerke:+17pp"
   ],
-  "name": "Edgewise Therapeutics, Inc."
+  "name": "Denali Therapeutics Inc."
  },
  {
-  "ticker": "QURE",
+  "ticker": "ZURA",
   "market": "us",
   "liste": "spekulativ",
   "score": 65,
-  "breakout_level": 49.845,
-  "adr_pct": 4.91,
-  "avg_volume": 1354425.0,
+  "breakout_level": 7.06,
+  "adr_pct": 6.05,
+  "avg_volume": 1274735.0,
+  "criteria": [
+   "volumen_aufbau:3.8x",
+   "trend_intakt",
+   "rel_staerke:+46pp"
+  ],
+  "name": "Zura Bio Limited"
+ },
+ {
+  "ticker": "NAVI",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 65,
+  "breakout_level": 9.575,
+  "adr_pct": 4.26,
+  "avg_volume": 1269260.0,
+  "criteria": [
+   "nahe_ausbruch:-0.9%",
+   "trend_intakt",
+   "rel_staerke:+12pp"
+  ],
+  "name": "Navient Corporation"
+ },
+ {
+  "ticker": "FWRG",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 65,
+  "breakout_level": 13.6,
+  "adr_pct": 4.97,
+  "avg_volume": 1228200.0,
+  "criteria": [
+   "nahe_ausbruch:-4.5%",
+   "trend_intakt",
+   "rel_staerke:+10pp"
+  ],
+  "name": "First Watch Restaurant Group, Inc."
+ },
+ {
+  "ticker": "ZLAB",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 65,
+  "breakout_level": 27.5,
+  "adr_pct": 4.55,
+  "avg_volume": 1221930.0,
   "criteria": [
    "nahe_ausbruch:-4.8%",
    "trend_intakt",
-   "rel_staerke:+90pp"
-  ],
-  "name": "uniQure N.V."
- },
- {
-  "ticker": "SPT",
-  "market": "us",
-  "liste": "spekulativ",
-  "score": 65,
-  "breakout_level": 10.56,
-  "adr_pct": 5.12,
-  "avg_volume": 1350460.0,
-  "criteria": [
-   "nahe_ausbruch:-2.1%",
-   "trend_intakt",
    "rel_staerke:+47pp"
   ],
-  "name": "Sprout Social, Inc"
+  "name": "Zai Lab Limited"
  },
  {
-  "ticker": "PTLO",
+  "ticker": "XNCR",
   "market": "us",
   "liste": "spekulativ",
   "score": 65,
-  "breakout_level": 5.24,
-  "adr_pct": 5.05,
-  "avg_volume": 1349555.0,
+  "breakout_level": 29.42,
+  "adr_pct": 6.14,
+  "avg_volume": 1210845.0,
   "criteria": [
-   "nahe_ausbruch:-5.0%",
+   "nahe_ausbruch:-0.4%",
    "trend_intakt",
-   "rel_staerke:+16pp"
+   "rel_staerke:+145pp"
   ],
-  "name": "Portillo's Inc."
+  "name": "Xencor, Inc."
+ },
+ {
+  "ticker": "ARWR",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 65,
+  "breakout_level": 90.97,
+  "adr_pct": 3.37,
+  "avg_volume": 1205660.0,
+  "criteria": [
+   "nahe_ausbruch:-2.3%",
+   "trend_intakt",
+   "rel_staerke:+13pp"
+  ],
+  "name": "Arrowhead Pharmaceuticals, Inc."
+ },
+ {
+  "ticker": "CLYM",
+  "market": "us",
+  "liste": "spekulativ",
+  "score": 65,
+  "breakout_level": 18.135,
+  "adr_pct": 7.04,
+  "avg_volume": 1205205.0,
+  "criteria": [
+   "nahe_ausbruch:-1.6%",
+   "trend_intakt",
+   "rel_staerke:+61pp"
+  ],
+  "name": "Climb Bio, Inc."
  }
 ]
