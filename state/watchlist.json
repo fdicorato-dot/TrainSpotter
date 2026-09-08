@@ -291,11 +291,11 @@
   "liste": "konservativ",
   "score": 70,
   "breakout_level": 83.76,
-  "adr_pct": 2.56,
-  "avg_volume": 931001.9,
+  "adr_pct": 2.6,
+  "avg_volume": 925226.5,
   "criteria": [
    "volumen_aufbau:1.7x",
-   "nahe_ausbruch:-3.2%",
+   "nahe_ausbruch:-1.9%",
    "trend_intakt"
   ],
   "name": "Volkswagen"
@@ -651,12 +651,12 @@
   "liste": "konservativ",
   "score": 65,
   "breakout_level": 35.72,
-  "adr_pct": 1.9,
-  "avg_volume": 4307510.5,
+  "adr_pct": 1.94,
+  "avg_volume": 4310400.35,
   "criteria": [
-   "nahe_ausbruch:-0.6%",
+   "nahe_ausbruch:-1.7%",
    "trend_intakt",
-   "rel_staerke:+14pp"
+   "rel_staerke:+13pp"
   ],
   "name": "Deutsche Bank"
  },
@@ -1244,6 +1244,21 @@
    "rel_staerke:+22pp"
   ],
   "name": "Star Bulk Carriers Corp."
+ },
+ {
+  "ticker": "BAS.DE",
+  "market": "eu",
+  "liste": "konservativ",
+  "score": 65,
+  "breakout_level": 53.98,
+  "adr_pct": 1.7,
+  "avg_volume": 1535525.9,
+  "criteria": [
+   "nahe_ausbruch:-0.3%",
+   "trend_intakt",
+   "rel_staerke:+6pp"
+  ],
+  "name": "BASF"
  },
  {
   "ticker": "SSNC",
@@ -2249,20 +2264,5 @@
    "rel_staerke:+41pp"
   ],
   "name": "Insight Enterprises, Inc."
- },
- {
-  "ticker": "PVLA",
-  "market": "us",
-  "liste": "spekulativ",
-  "score": 65,
-  "breakout_level": 160.33,
-  "adr_pct": 4.7,
-  "avg_volume": 190040.0,
-  "criteria": [
-   "nahe_ausbruch:-1.9%",
-   "trend_intakt",
-   "rel_staerke:+48pp"
-  ],
-  "name": "Palvella Therapeutics, Inc."
  }
 ]
